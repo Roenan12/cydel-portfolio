@@ -32,7 +32,6 @@ code {
 }
 
 .container {
-  width: 100vh;
   min-height: 100dvh;
   transition: 0.5s;
 }
