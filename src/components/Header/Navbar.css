@@ -1,0 +1,38 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 7%;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.dark .navbar {
+  color: #eeeeee;
+}
+.logo {
+  height: 55px;
+  width: 55px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  cursor: pointer;
+  color: var(--color-text-light);
+}
+
+.btn-toggle {
+  background-color: transparent;
+  border: none;
+}
