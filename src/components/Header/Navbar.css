@@ -35,4 +35,5 @@ ul li {
 .btn-toggle {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
