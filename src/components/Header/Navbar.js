@@ -10,13 +10,24 @@ export const Navbar = ({ theme, onSetTheme }) => {
   }
   return (
     <nav className="navbar">
-      <img src={cydel} alt="company logo" className="logo" />
+      <a href="#home">
+        <img src={cydel} alt="company logo" className="logo" />
+      </a>
       <p>Cydel</p>
+
       <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
 
       <button className="btn-toggle" onClick={handleToggleMode}>
