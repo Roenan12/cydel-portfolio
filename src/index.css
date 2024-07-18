@@ -1,8 +1,8 @@
 :root {
   --color-primary: #d72323;
   --color-primary-light: #f62b2b;
-  --color-text: #303841;
-  --color-text-dark: #eeeeee;
+  --color-text: #ffffff;
+  --color-text-light: #303841;
   --color-background-light: #eeeeee;
   --color-background-dark: #303841;
   --color-secondary: #303841;
@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: lexend, sans-serif;
+  font-size: 1.2rem;
 }
 
 body {
@@ -22,8 +23,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--color-text);
-  background-color: var(--color-background-900);
 }
 
 code {
@@ -32,8 +31,9 @@ code {
 }
 
 .container {
+  background-color: var(--color-background-light);
   min-height: 100dvh;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .container.dark {
