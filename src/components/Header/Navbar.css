@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #d72323;
+  background-color: var(--color-primary);
   font-size: 18px;
   font-weight: 400;
   color: var(--color-text);
@@ -9,6 +9,7 @@
   align-items: center;
   padding: 15px 7%;
   transition: 0.5s ease-in-out;
+  z-index: 999;
 }
 
 .dark .navbar {
@@ -22,7 +23,8 @@
   cursor: pointer;
 }
 
-a {
+.logo-wrapper a,
+.nav-links a {
   text-decoration: none;
   color: var(--color-text);
 }
@@ -44,12 +46,31 @@ a {
   display: inline-block;
   margin: 10px 20px;
   cursor: pointer;
+  transition: opacity 0ms ease-in-out, transform 0.2s ease-in-out 0ms;
+}
+
+.nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.nav-links li:active {
+  opacity: 80%;
 }
 
 .btn-toggle {
   background-color: transparent;
+  color: var(--color-text);
   border: none;
   cursor: pointer;
+  transition: color 0.1s ease-in-out, transform 0.2s ease-in-out 0ms;
+}
+
+.btn-toggle:hover {
+  color: var(--color-yellow);
+}
+
+.btn-toggle:active {
+  transform: scale(0.85);
 }
 
 .icon {

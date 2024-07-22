@@ -43,7 +43,7 @@ export const Navbar = ({ theme, onSetTheme, clickMenu, onClickMenu }) => {
         className={`btn-toggle ${clickMenu ? "active" : ""}`}
         onClick={handleToggleMode}
       >
-        {theme === "light" ? <Moon color="#EEEEEE" /> : <Sun color="#EEEEEE" />}
+        {theme === "light" ? <Moon /> : <Sun />}
       </button>
 
       {clickMenu ? (
