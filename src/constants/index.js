@@ -3,27 +3,30 @@ import { Wrench } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
 
 export const navItems = [
-  { label: "About", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Projects", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 
-export const features = [
+export const services = [
   {
-    icon: <Warehouse />,
-    text: "Installation",
-    description: "Installation of roll up door within the day!",
+    icon: <Warehouse size={32} />,
+    heading: "1 Day Installation",
+    description:
+      "Get your roll-up door installed within the day by our professional team, ensuring quick and hassle-free setup tailored to your schedule.",
   },
   {
-    icon: <ShieldCheck />,
-    text: "1 Year Warranty",
-    description: "Our roll up door offers a 1 year warranty after sales",
+    icon: <ShieldCheck size={32} />,
+    heading: "1 Year Warranty",
+    description:
+      "Enjoy peace of mind with our comprehensive 1-year warranty, covering any defects or issues with your roll-up door post-installation.",
   },
   {
-    icon: <Wrench />,
-    text: "Repair",
-    description: "We offer repair services to tailor your needs",
+    icon: <Wrench size={32} />,
+    heading: "Repair",
+    description:
+      "Our expert technicians are ready to provide tailored repair services, addressing any issues to keep your roll-up doors functioning smoothly.",
   },
 ];
 
