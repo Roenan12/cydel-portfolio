@@ -19,9 +19,9 @@ section {
 
 @media screen and (max-width: 55rem) {
   .services {
-    padding-top: 35%;
     justify-content: center;
     font-size: var(--44px);
+    padding-top: 10%;
     margin: 0;
   }
   section {
