@@ -17,7 +17,7 @@ section {
   align-items: center;
 }
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 55rem) {
   .services {
     padding-top: 35%;
     justify-content: center;
