@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "./components/Header/Navbar.js";
+import { Hero } from "./components/Hero/Hero.js";
 
 function App() {
   const current_theme = localStorage.getItem("current_theme");
@@ -19,6 +20,7 @@ function App() {
           clickMenu={clickMenu}
           onClickMenu={isClickMenu}
         />
+        <Hero theme={theme} onSetTheme={setTheme} />
       </div>
     </>
   );
