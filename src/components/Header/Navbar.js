@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { navItems } from "../../constants";
 import cydel from "../../assets/cydel.png";
 import { Moon } from "lucide-react";
 import { Sun } from "lucide-react";
@@ -26,18 +27,11 @@ export const Navbar = ({ theme, onSetTheme, clickMenu, onClickMenu }) => {
       </div>
 
       <ul className={`nav-links ${clickMenu ? "active" : ""}`}>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        {navItems.map((item, index) => (
+          <li key={index}>
+            <a href={item.href}>{item.label}</a>
+          </li>
+        ))}
       </ul>
       <button
         className={`btn-toggle ${clickMenu ? "active" : ""}`}
