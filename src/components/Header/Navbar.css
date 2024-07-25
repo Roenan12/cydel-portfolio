@@ -1,6 +1,6 @@
 .navbar {
   background-color: var(--color-primary);
-  font-size: 18px;
+  font-size: var(--24px);
   font-weight: 400;
   color: var(--color-text);
   width: 100%;
@@ -37,6 +37,7 @@
 }
 
 .nav-links {
+  font-size: var(--18px);
   flex: 1;
   list-style: none;
   text-align: center;
@@ -80,10 +81,10 @@
   height: 32px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 30rem) {
   .navbar {
     padding: 15px 10px;
-    font-size: 1.4rem;
+    font-size: var(--24px);
     justify-content: space-between;
     align-items: center;
   }
@@ -92,7 +93,6 @@
   .fade-in-top {
     height: 300px;
     padding: 15px 10px;
-    font-size: 1.4rem;
     justify-content: space-between;
     align-items: start;
     transition: 0.5s ease-in-out;
@@ -101,10 +101,10 @@
   }
 
   .nav-links.active {
+    font-size: var(--22px);
     position: absolute;
     top: 25%;
     left: 35%;
-    font-size: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
