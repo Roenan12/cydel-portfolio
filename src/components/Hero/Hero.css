@@ -1,3 +1,11 @@
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
 .hero {
   align-items: center;
   justify-content: center;
