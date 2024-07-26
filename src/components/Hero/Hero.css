@@ -1,16 +1,18 @@
-section {
+.hero {
   position: relative;
   display: flex;
-  flex-direction: column;
   min-height: 400px;
   padding: 100px 20vw;
-}
-
-.hero {
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
+}
+
+@media screen and (max-width: 55rem) {
+  .hero {
+    padding: 50px;
+  }
 }
 
 .hero-overlay {
@@ -41,7 +43,7 @@ section {
   z-index: 3;
 }
 
-.hero-content h1 {
+.hero-content h2 {
   color: var(--color-primary);
   text-shadow: 2px 2px var(--color-text);
 }

@@ -7,7 +7,7 @@
   font-size: var(--64px);
 }
 
-section {
+.card-container {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -19,12 +19,10 @@ section {
 
 @media screen and (max-width: 55rem) {
   .services {
-    justify-content: center;
+    text-align: center;
     font-size: var(--44px);
-    padding-top: 10%;
-    margin: 0;
   }
-  section {
+  .card-container {
     padding: 50px;
     flex-direction: column;
   }

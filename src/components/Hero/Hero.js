@@ -7,7 +7,7 @@ export function Hero() {
     <>
       <section id="home" className="hero">
         <div className="hero-content">
-          <h1>Cydel Iron Works</h1>
+          <h2>Cydel Iron Works</h2>
           <p>Your Roll up Door Specialist</p>
 
           <a className="hero-btn" href="#contact">
