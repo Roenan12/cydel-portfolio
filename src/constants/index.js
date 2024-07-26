@@ -12,9 +12,9 @@ export const navItems = [
 export const services = [
   {
     icon: <Warehouse size={32} />,
-    heading: "1 Day Installation",
+    heading: "Installation",
     description:
-      "Get your roll-up door installed within the day by our professional team, ensuring quick and hassle-free setup tailored to your schedule.",
+      "Get your roll-up door installed within the day by our professional team, ensuring quick and hassle-free setup fit to your schedule.",
   },
   {
     icon: <ShieldCheck size={32} />,
