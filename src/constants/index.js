@@ -1,6 +1,27 @@
 import { Warehouse } from "lucide-react";
 import { Wrench } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
+import one from "../assets/1.jpg";
+import two from "../assets/2.jpg";
+import three from "../assets/3.jpg";
+import four from "../assets/4.jpg";
+import five from "../assets/5.jpg";
+import six from "../assets/6.jpg";
+import seven from "../assets/7.jpg";
+import eight from "../assets/8.jpg";
+import nine from "../assets/9.jpg";
+
+export const images = [
+  { photo: one },
+  { photo: two },
+  { photo: three },
+  { photo: four },
+  { photo: five },
+  { photo: six },
+  { photo: seven },
+  { photo: eight },
+  { photo: nine },
+];
 
 export const navItems = [
   { label: "About", href: "#about" },
