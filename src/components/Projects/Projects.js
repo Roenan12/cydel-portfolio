@@ -5,7 +5,7 @@ import { images } from "../../constants/index";
 export function Projects() {
   return (
     <>
-      <div className="project-header">Some of our Projects</div>
+      <h1 className="project-header">Some of our Projects</h1>
       <section className="slider-container">
         <div className="slider">
           <div className="slide-track">

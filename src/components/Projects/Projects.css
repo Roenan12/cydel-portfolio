@@ -10,6 +10,13 @@
     0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 55rem) {
+  .project-header {
+    text-align: center;
+    font-size: var(--44px);
+  }
+}
+
 .slider-container {
   display: grid;
   place-items: center;
