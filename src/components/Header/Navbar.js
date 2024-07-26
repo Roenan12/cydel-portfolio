@@ -7,7 +7,7 @@ import { Sun } from "lucide-react";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 
-export const Navbar = ({ theme, onSetTheme, clickMenu, onClickMenu }) => {
+export function Navbar({ theme, onSetTheme, clickMenu, onClickMenu }) {
   function handleToggleMode() {
     theme === "light" ? onSetTheme("dark") : onSetTheme("light");
   }
@@ -47,4 +47,4 @@ export const Navbar = ({ theme, onSetTheme, clickMenu, onClickMenu }) => {
       )}
     </nav>
   );
-};
+}
