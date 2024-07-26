@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <>
       <h1 className="project-header">Some of our Projects</h1>
-      <section className="slider-container">
+      <section id="projects" className="slider-container">
         <div className="slider">
           <div className="slide-track">
             {images.map((items, index) => (
