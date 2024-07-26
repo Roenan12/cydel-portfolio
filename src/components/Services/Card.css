@@ -10,6 +10,7 @@
   width: 350px;
   height: 300px;
   margin: 10px;
+  aspect-ratio: 1/1;
   background: var(--background);
   color: var(--textColor);
   border: 1px solid var(--cardBorder);
