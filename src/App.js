@@ -3,6 +3,7 @@ import { Navbar } from "./components/Header/Navbar.js";
 import { Hero } from "./components/Hero/Hero.js";
 import { Services } from "./components/Services/Services.js";
 import { Projects } from "./components/Projects/Projects.js";
+import { Contact } from "./components/Contact/Contact.js";
 
 function App() {
   const current_theme = localStorage.getItem("current_theme");
@@ -25,6 +26,7 @@ function App() {
         <Hero />
         <Services />
         <Projects />
+        <Contact />
       </div>
     </>
   );
