@@ -10,18 +10,10 @@ import six from "../assets/6.jpg";
 import seven from "../assets/7.jpg";
 import eight from "../assets/8.jpg";
 import nine from "../assets/9.jpg";
-
-export const images = [
-  { photo: one },
-  { photo: two },
-  { photo: three },
-  { photo: four },
-  { photo: five },
-  { photo: six },
-  { photo: seven },
-  { photo: eight },
-  { photo: nine },
-];
+import { MapPin } from "lucide-react";
+import { PhoneCall } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Facebook } from "lucide-react";
 
 export const navItems = [
   { label: "About", href: "#about" },
@@ -41,7 +33,7 @@ export const services = [
     icon: <ShieldCheck size={32} />,
     heading: "1 Year Warranty",
     description:
-      "Enjoy peace of mind with our comprehensive 1-year warranty, covering any defects or issues with your roll-up door post-installation.",
+      "Worry less with our 1-year warranty, covering any defects or issues with your roll-up door post-installation.",
   },
   {
     icon: <Wrench size={32} />,
@@ -49,6 +41,18 @@ export const services = [
     description:
       "Our expert technicians are ready to provide tailored repair services, addressing any issues to keep your roll-up doors functioning smoothly.",
   },
+];
+
+export const images = [
+  { photo: one },
+  { photo: two },
+  { photo: three },
+  { photo: four },
+  { photo: five },
+  { photo: six },
+  { photo: seven },
+  { photo: eight },
+  { photo: nine },
 ];
 
 export const shutterTypes = [
@@ -120,5 +124,28 @@ export const shutterTypes = [
     optionalAccesories: ["Wicket door for service entry"],
     application:
       "Commonly used but not limited to stores inside the shopping malls, banks, airports, and hospitals.",
+  },
+];
+
+export const contacts = [
+  {
+    icon: <MapPin />,
+    info: "542 Fernandino Street San Nicolas, City of San Fernando Pampanga, 2000",
+    href: "https://maps.app.goo.gl/wM935raUFxiQTaPC6",
+  },
+  {
+    icon: <PhoneCall />,
+    info: ["(+63) 922 830 4418 | ", "(+63) 933 818 4362"],
+    href: "tel:+639228304418",
+  },
+  {
+    icon: <Mail />,
+    info: ["cydelironworks@yahoo.com | ", "cydelrollupdoor@gmail.com"],
+    href: "mailto:cydelrollupdoor@gmail.com",
+  },
+  {
+    icon: <Facebook />,
+    info: "Cydel Roll Up Door Services",
+    href: "https://www.facebook.com/profile.php?id=61552183514680",
   },
 ];
