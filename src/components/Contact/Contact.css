@@ -93,7 +93,7 @@ textarea {
 
 .dark .contact-form input,
 .dark textarea {
-  background: inherit;
+  background: var(--color-dark);
   color: var(--color-text);
   border-color: var(--color-semi-white);
 }
@@ -117,6 +117,7 @@ textarea {
   overflow: hidden;
   font-size: var(--20px);
   cursor: pointer;
+  background-color: var(--color-background-light);
   color: var(--color-black);
   z-index: 1;
 }
