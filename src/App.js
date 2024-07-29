@@ -9,6 +9,7 @@ function App() {
   const current_theme = localStorage.getItem("current_theme");
   const [theme, setTheme] = useState(current_theme ? current_theme : "light");
   const [clickMenu, isClickMenu] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("current_theme", theme);
@@ -23,7 +24,7 @@ function App() {
           clickMenu={clickMenu}
           onClickMenu={isClickMenu}
         />
-        <Hero />
+        <Hero isLoading={isLoading} setIsLoading={setIsLoading} />
         <Services />
         <Projects />
         <Contact />
