@@ -3,7 +3,7 @@ import "./Loader.css";
 
 export function Loader() {
   return (
-    <div class="spinner">
+    <div className="spinner">
       <span></span>
       <span></span>
       <span></span>
