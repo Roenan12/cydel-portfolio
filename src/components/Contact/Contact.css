@@ -22,11 +22,16 @@
   padding: 10px 15px;
   border: none;
   border-radius: 20px;
+  font-weight: 600;
 }
 
 .contact-header button,
 .contact-header h1 {
   margin: 10px 0px;
+}
+
+.dark .contact-header button {
+  color: var(--color-primary);
 }
 
 .contact-header > p {

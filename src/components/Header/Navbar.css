@@ -13,6 +13,10 @@
 }
 
 .dark .navbar {
+  background-color: var(--color-primary-dark);
+}
+
+.dark .navbar {
   color: var(--color-text);
 }
 
