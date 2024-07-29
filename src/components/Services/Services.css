@@ -11,19 +11,20 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  width: 100%;
   min-height: 400px;
-  padding: 100px 20vw;
-  justify-content: space-evenly;
+  padding: 100px 10vw;
+  justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (max-width: 55rem) {
+@media screen and (max-width: 68rem) {
   .services {
     text-align: center;
     font-size: var(--44px);
   }
   .card-container {
-    padding: 50px;
+    padding: 20px;
     flex-direction: column;
   }
 }

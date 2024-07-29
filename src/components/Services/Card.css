@@ -7,18 +7,30 @@
 }
 
 .card {
-  width: 350px;
-  height: 300px;
+  justify-content: center;
+  width: 50%;
+  height: 320px;
   margin: 10px;
-  aspect-ratio: 1/1;
   background: var(--background);
   color: var(--textColor);
   border: 1px solid var(--cardBorder);
-  padding: 25px;
+  padding: 35px;
   box-shadow: 8px 8px 0 var(--cardShadow);
   border-radius: 8px;
   display: inline-block;
   transition: 0.5s ease-in-out, box-shadow 0.5s, transform 0.5s;
+}
+
+@media screen and (max-width: 68rem) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .card {
+    width: 100%;
+  }
 }
 
 .dark .card {
