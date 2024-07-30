@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { contacts } from "../../constants/index";
 import "./Contact.css";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Loader } from "../Loader";
 
-export function Contact() {
+export function Contact({ isLoading, setIsLoading }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [capVal, setCapVal] = useState(null);
 
   const SITE_KEY = process.env.REACT_APP_SITE_KEY;
+  const recaptchaRef = useRef(null);
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setIsLoading(true);
 
     const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
     const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -32,6 +35,20 @@ export function Contact() {
       },
     };
 
+    // Check if all required fields are filled out
+    if (!name || !email || !message) {
+      alert("Please fill out all required fields.");
+      setIsLoading(false);
+      return;
+    }
+
+    // Check if reCAPTCHA is validated
+    if (!capVal) {
+      alert("Please complete the reCAPTCHA.");
+      setIsLoading(false);
+      return;
+    }
+
     //Send email via axios
     try {
       const res = await axios.post(
@@ -43,9 +60,17 @@ export function Contact() {
       setName("");
       setEmail("");
       setMessage("");
+      setCapVal(null);
+
+      // Reset reCAPTCHA
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset();
+      }
     } catch (error) {
       alert("Oops... " + JSON.stringify(error));
       console.log(error);
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -84,9 +109,10 @@ export function Contact() {
               <ReCAPTCHA
                 sitekey={SITE_KEY}
                 onChange={(val) => setCapVal(val)}
+                ref={recaptchaRef}
               />
-              <button type="submit" className="send-button" disabled={!capVal}>
-                Send Email
+              <button type="submit" className="send-button">
+                {isLoading ? <Loader size={25} /> : "Send Email"}
               </button>
             </form>
           </div>
