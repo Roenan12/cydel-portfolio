@@ -51,6 +51,7 @@
 
 .contact-container {
   width: 100%;
+  max-width: 50%;
   background: var(--color-white);
   border: 2px solid transparent;
   padding: 32px 24px;
@@ -67,18 +68,26 @@
   color: var(--color-text);
 }
 
-@media screen and (max-width: 75rem) {
+/* 1536px (2xl) */
+@media screen and (max-width: 96rem) {
+  .contact-section {
+    padding: 50px 10vw;
+  }
+}
+
+/* 1024px-1280px (lg-xl) */
+@media screen and (max-width: 80rem) {
   .contact-section {
     padding: 50px 5vw;
   }
 }
-
+/* 640px-800px (sm-md) */
 @media screen and (max-width: 50rem) {
   .contact-section {
     padding: 50px 5vw;
   }
   .contact-container {
-    width: 100%;
+    max-width: 100%;
   }
   .wrapper {
     flex-direction: column;

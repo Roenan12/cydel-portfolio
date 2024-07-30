@@ -23,11 +23,11 @@
 
 @media screen and (max-width: 68rem) {
   .card {
-    width: 70%;
+    width: 50%;
   }
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
   .card {
     width: 100%;
   }
