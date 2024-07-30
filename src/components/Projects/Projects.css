@@ -76,7 +76,6 @@
   transform: translateZ(20px);
 }
 
-/* Gradient overlay styles */
 .slider::before,
 .slider::after {
   content: "";
