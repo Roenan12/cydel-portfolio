@@ -31,7 +31,7 @@ export function Hero({ isLoading, setIsLoading }) {
           </div>
         )}
         {isLoading ? (
-          <Loader />
+          <Loader size={100} />
         ) : (
           <img
             className="hero-img kenburns-top"

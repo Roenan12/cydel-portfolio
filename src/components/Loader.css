@@ -2,9 +2,6 @@
   position: relative;
   --gap: 5px;
   --clr: var(--color-primary);
-  --height: 23px;
-  width: 100px;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,8 +10,7 @@
 
 .spinner span {
   background: var(--clr);
-  width: 6px;
-  height: var(--height);
+  width: 6px; /* Fixed width, can also be dynamic if needed */
   animation: grow 1s ease-in-out infinite;
 }
 
