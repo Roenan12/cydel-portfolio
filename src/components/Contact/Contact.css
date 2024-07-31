@@ -195,13 +195,13 @@ textarea {
 
 .contact-list {
   padding: 18px 20px;
-  border: 2px solid var(--color-black);
+  border: 2px solid rgb(169, 169, 169);
   border-radius: 8px;
   margin: 10px 0px;
 }
 
 .dark .contact-list {
-  border-color: var(--color-white);
+  border-color: var(--color-dark);
 }
 
 .contact-icon {
