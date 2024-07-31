@@ -14,7 +14,7 @@
 .dark .project-header {
   text-shadow: 2px 2px var(--color-text);
 }
-@media screen and (max-width: 55rem) {
+@media screen and (max-width: 45rem) {
   .project-header {
     text-align: center;
     font-size: var(--44px);

@@ -26,11 +26,13 @@
   align-items: center;
 }
 
-@media screen and (max-width: 68rem) {
+@media screen and (max-width: 40rem) {
   .services {
-    text-align: center;
     font-size: var(--44px);
   }
+}
+
+@media screen and (max-width: 68rem) {
   .card-container {
     padding: 20px;
     flex-direction: column;
