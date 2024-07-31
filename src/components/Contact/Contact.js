@@ -102,7 +102,7 @@ export function Contact({ isLoading, setIsLoading }) {
               <p>Message</p>
               <textarea
                 row="10"
-                placeholder="What's your message?"
+                placeholder="Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
