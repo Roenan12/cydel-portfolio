@@ -14,6 +14,7 @@ import { MapPin } from "lucide-react";
 import { PhoneCall } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Facebook } from "lucide-react";
+import { Pulse } from "../components/Contact/Pulse";
 
 export const navItems = [
   { label: "About", href: "#about" },
@@ -129,21 +130,25 @@ export const shutterTypes = [
 
 export const contacts = [
   {
+    ping: <Pulse />,
     icon: <MapPin />,
     info: "542 Fernandino Street San Nicolas, City of San Fernando Pampanga, 2000",
     href: "https://maps.app.goo.gl/wM935raUFxiQTaPC6",
   },
   {
+    ping: "",
     icon: <PhoneCall />,
     info: ["(+63) 922 830 4418 | ", "(+63) 933 818 4362"],
     href: "tel:+639228304418",
   },
   {
+    ping: "",
     icon: <Mail />,
     info: ["cydelironworks@yahoo.com | ", "cydelrollupdoor@gmail.com"],
     href: "mailto:cydelrollupdoor@gmail.com",
   },
   {
+    ping: "",
     icon: <Facebook />,
     info: "Cydel Roll Up Door Services",
     href: "https://www.facebook.com/profile.php?id=61552183514680",

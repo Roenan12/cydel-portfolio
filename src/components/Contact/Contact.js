@@ -121,7 +121,10 @@ export function Contact({ isLoading, setIsLoading }) {
             {contacts.map((items, index) => (
               <a href={items.href} target="_blank" rel="noreferrer" key={index}>
                 <div className="contact-list">
-                  <div className="contact-icon">{items.icon}</div>
+                  <div className="contact-icon">
+                    {items.icon}
+                    {items.ping}
+                  </div>
                   <p className="contact-info">{items.info}</p>
                 </div>
               </a>
