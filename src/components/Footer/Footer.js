@@ -1,5 +1,4 @@
 import "./Footer.css";
-import { Facebook } from "lucide-react";
 
 export function Footer() {
   return (
