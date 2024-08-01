@@ -31,7 +31,7 @@
 }
 
 .dark .contact-header button {
-  color: var(--color-primary);
+  color: var(--color-primary-light);
 }
 
 .contact-header > p {
