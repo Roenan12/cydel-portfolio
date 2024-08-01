@@ -4,8 +4,6 @@
   position: relative;
   padding: 100px 20vw;
   margin: 0;
-  justify-content: center;
-  align-items: center;
 }
 
 .dark .contact-section {
@@ -13,6 +11,7 @@
 }
 
 .contact-header {
+  display: inline-block;
   margin: 20px 0px;
 }
 
@@ -207,10 +206,6 @@ textarea {
 .contact-icon {
   margin: 5px 0px;
   color: var(--color-primary);
-}
-
-.other-contacts {
-  width: 100%;
 }
 
 .other-contacts a {
