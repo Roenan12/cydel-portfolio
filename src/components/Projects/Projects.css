@@ -12,7 +12,7 @@
 }
 
 .dark .project-header {
-  text-shadow: 2px 2px var(--color-text);
+  text-shadow: 1px 1px var(--color-text);
 }
 @media screen and (max-width: 45rem) {
   .project-header {

@@ -12,7 +12,7 @@
 }
 
 .dark .services {
-  text-shadow: 2px 2px var(--color-text);
+  text-shadow: 1px 1px var(--color-text);
 }
 
 .card-container {
