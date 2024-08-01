@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero/Hero.js";
 import { Services } from "./components/Services/Services.js";
 import { Projects } from "./components/Projects/Projects.js";
 import { Contact } from "./components/Contact/Contact.js";
+import { Footer } from "./components/Footer/Footer.js";
 
 function App() {
   const current_theme = localStorage.getItem("current_theme");
@@ -28,6 +29,7 @@ function App() {
         <Services />
         <Projects />
         <Contact isLoading={isLoading} setIsLoading={setIsLoading} />
+        <Footer />
       </div>
     </>
   );
