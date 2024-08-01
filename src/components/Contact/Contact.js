@@ -4,8 +4,10 @@ import "./Contact.css";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Loader } from "../Loader";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-export function Contact({ isLoading, setIsLoading }) {
+export function Contact({ isLoading, setIsLoading, theme }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -37,14 +39,14 @@ export function Contact({ isLoading, setIsLoading }) {
 
     // Check if all required fields are filled out
     if (!name || !email || !message) {
-      alert("Please fill out all required fields.");
+      toast.error("Please fill out all required fields.");
       setIsLoading(false);
       return;
     }
 
     // Check if reCAPTCHA is validated
     if (!capVal) {
-      alert("Please complete the reCAPTCHA.");
+      toast.info("Please complete the reCAPTCHA.");
       setIsLoading(false);
       return;
     }
@@ -55,7 +57,7 @@ export function Contact({ isLoading, setIsLoading }) {
         "https://api.emailjs.com/api/v1.0/email/send",
         data
       );
-      alert("Your mail is sent!");
+      toast.success("Your mail was sent, Thank you for reaching out!");
       console.log(res.data);
       setName("");
       setEmail("");
@@ -67,7 +69,7 @@ export function Contact({ isLoading, setIsLoading }) {
         recaptchaRef.current.reset();
       }
     } catch (error) {
-      alert("Oops... " + JSON.stringify(error));
+      toast.error("Oops... Failed to send mail.");
       console.log(error);
     } finally {
       setIsLoading(false);
@@ -131,6 +133,7 @@ export function Contact({ isLoading, setIsLoading }) {
             ))}
           </div>
         </div>
+        <ToastContainer theme={theme} />
       </section>
     </>
   );

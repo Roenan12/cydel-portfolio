@@ -28,7 +28,11 @@ function App() {
         <Hero isLoading={isLoading} setIsLoading={setIsLoading} />
         <Services />
         <Projects />
-        <Contact isLoading={isLoading} setIsLoading={setIsLoading} />
+        <Contact
+          isLoading={isLoading}
+          setIsLoading={setIsLoading}
+          theme={theme}
+        />
         <Footer />
       </div>
     </>
