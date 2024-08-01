@@ -5,8 +5,10 @@ import { images } from "../../constants/index";
 export function Projects() {
   return (
     <>
-      <h1 className="project-header">Some of our Projects</h1>
-      <section id="projects" className="slider-container">
+      <h1 className="project-header" id="projects">
+        Some of our Projects
+      </h1>
+      <section className="slider-container">
         <div className="slider">
           <div className="slide-track">
             {images.map((items, index) => (
