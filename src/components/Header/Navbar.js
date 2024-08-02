@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { navItems } from "../../constants";
 import cydel from "../../assets/cydel.png";
@@ -7,44 +7,68 @@ import { Sun } from "lucide-react";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 
-export function Navbar({ theme, onSetTheme, clickMenu, onClickMenu }) {
-  function handleToggleMode() {
+export function Navbar({ theme, onSetTheme }) {
+  //change nav color on scroll
+  const [colorNav, setNavColor] = useState(false);
+
+  function changeNavColor() {
+    if (window.scrollY >= 90) {
+      setNavColor(true);
+    } else {
+      setNavColor(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeNavColor);
+
+  //show mobile nav
+  const [clickMenu, setClickMenu] = useState(false);
+
+  function handleClickMenu() {
+    setClickMenu((show) => !show);
+  }
+
+  function handleChangeTheme() {
     theme === "light" ? onSetTheme("dark") : onSetTheme("light");
   }
 
-  function handleClickMenu() {
-    onClickMenu((show) => !show);
-  }
   return (
-    <nav className={`navbar ${clickMenu ? "active" : ""}`}>
-      <div className="logo-wrapper">
-        <a href="#home">
-          <img src={cydel} alt="company logo" className="logo" />
-        </a>
-        <a href="#home">
-          <span>Cydel</span>
-        </a>
-      </div>
+    <header className={colorNav ? "header header-bg" : "header"}>
+      <nav className={`navbar ${clickMenu ? "active" : ""}`}>
+        <div className="logo">
+          <a href="#home">
+            <img className="cydel-logo" src={cydel} alt="company logo" />
+          </a>
+          <a href="#home">
+            <span>Cydel</span>
+          </a>
+        </div>
 
-      <ul className={`nav-links ${clickMenu ? "active" : ""}`}>
-        {navItems.map((item, index) => (
-          <li key={index}>
-            <a href={item.href}>{item.label}</a>
-          </li>
-        ))}
-      </ul>
-      <button
-        className={`btn-toggle ${clickMenu ? "active" : ""}`}
-        onClick={handleToggleMode}
-      >
-        {theme === "light" ? <Moon /> : <Sun />}
-      </button>
+        <ul className={clickMenu ? "nav-menu active" : "nav-menu"}>
+          {navItems.map((item, index) => (
+            <li
+              className="nav-item"
+              key={index}
+              onClick={() => setClickMenu(false)}
+            >
+              <a href={item.href} onCLick={handleClickMenu}>
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="theme-icon" onClick={handleChangeTheme}>
+          {theme === "light" ? <Moon /> : <Sun />}
+        </div>
 
-      {clickMenu ? (
-        <X className="icon" onClick={handleClickMenu} />
-      ) : (
-        <Menu className="icon" onClick={handleClickMenu} />
-      )}
-    </nav>
+        <div className="hamburger" onClick={handleClickMenu}>
+          {clickMenu ? (
+            <X className="icon" size={30} />
+          ) : (
+            <Menu className="icon" size={30} />
+          )}
+        </div>
+      </nav>
+    </header>
   );
 }
