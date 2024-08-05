@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   display: flex;
-  min-height: 400px;
+  min-height: 100vh;
   padding: 100px 20vw;
   align-items: center;
   justify-content: center;
@@ -86,33 +86,6 @@
 
 .hero-btn:hover::before {
   transform: translateX(0);
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  z-index: 2;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(144% + 1.3px);
-  height: 150px;
-}
-
-.wave .shape-fill {
-  fill: var(--color-background-light);
-  transition: 0.5s ease-in-out;
-}
-
-.dark .wave .shape-fill {
-  fill: var(--color-background-dark);
 }
 
 .kenburns-top {

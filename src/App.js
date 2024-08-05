@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer/Footer.js";
 function App() {
   const current_theme = localStorage.getItem("current_theme");
   const [theme, setTheme] = useState(current_theme ? current_theme : "light");
-  const [clickMenu, isClickMenu] = useState(false);
+
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -19,12 +19,7 @@ function App() {
   return (
     <>
       <div className={`container ${theme}`}>
-        <Navbar
-          theme={theme}
-          onSetTheme={setTheme}
-          clickMenu={clickMenu}
-          onClickMenu={isClickMenu}
-        />
+        <Navbar theme={theme} onSetTheme={setTheme} />
         <Hero isLoading={isLoading} setIsLoading={setIsLoading} />
         <Services />
         <Projects />
