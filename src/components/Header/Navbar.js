@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { navItems } from "../../constants";
 import cydel from "../../assets/cydel.png";
-import { Moon } from "lucide-react";
-import { Sun } from "lucide-react";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 
-export function Navbar({ theme, onSetTheme }) {
+export function Navbar() {
   //change nav color on scroll
   const [colorNav, setNavColor] = useState(false);
 
@@ -26,10 +24,6 @@ export function Navbar({ theme, onSetTheme }) {
 
   function handleClickMenu() {
     setClickMenu((show) => !show);
-  }
-
-  function handleChangeTheme() {
-    theme === "light" ? onSetTheme("dark") : onSetTheme("light");
   }
 
   return (
@@ -51,15 +45,29 @@ export function Navbar({ theme, onSetTheme }) {
               key={index}
               onClick={() => setClickMenu(false)}
             >
-              <a href={item.href} onCLick={handleClickMenu}>
+              <a href={item.href} onClick={handleClickMenu}>
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-        <div className="theme-icon" onClick={handleChangeTheme}>
-          {theme === "light" ? <Moon /> : <Sun />}
-        </div>
+        <a className="nav-btn" href="#contact">
+          <p>Inquire</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="4"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </a>
 
         <div className="hamburger" onClick={handleClickMenu}>
           {clickMenu ? (
