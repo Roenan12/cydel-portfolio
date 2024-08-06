@@ -9,6 +9,7 @@
 .card {
   justify-content: center;
   width: 50%;
+  min-height: 330px;
   height: 320px;
   margin: 10px;
   background: var(--background);
@@ -20,26 +21,26 @@
   display: inline-block;
   transition: 0.5s ease-in-out, box-shadow 0.5s, transform 0.5s;
 }
+/* 1920px */
+@media screen and (max-width: 120rem) {
+}
 
-@media screen and (max-width: 68rem) {
+/* 1440 */
+@media screen and (max-width: 90rem) {
+}
+
+/* 1200px */
+@media screen and (max-width: 70rem) {
   .card {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 40rem) {
+/* 640px-800px (xs) */
+@media screen and (max-width: 50rem) {
   .card {
     width: 100%;
   }
-}
-
-.dark .card {
-  --background: #3c4043;
-  --cardShadow: rgba(0, 0, 0, 0.28);
-  --cardShadowHover: rgba(0, 0, 0, 0.16);
-  --cardShadowActive: rgba(0, 0, 0, 0.55);
-  --cardBorder: #202125;
-  color: var(--color-text);
 }
 
 .card:hover {
@@ -49,24 +50,23 @@
 
 .card-heading {
   font-size: var(--18px);
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
   font-weight: bold;
 }
 
 .card > .card-icon,
 .card > .card-heading,
 .card > .card-description {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.7rem;
   cursor: default;
   user-select: none;
 }
 
 .card > .card-description {
-  line-height: 1.5em;
-  min-height: 6em;
+  line-height: 1.5rem;
+  min-height: 6rem;
 }
 
 .card > .card-icon {
-  font-size: 3em;
-  margin-bottom: 0.2em;
+  font-size: 3rem;
 }
