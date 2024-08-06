@@ -133,7 +133,7 @@ export function Contact({ isLoading, setIsLoading, theme }) {
             ))}
           </div>
         </div>
-        <ToastContainer theme={theme} />
+        <ToastContainer />
       </section>
     </>
   );
