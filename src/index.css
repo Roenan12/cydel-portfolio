@@ -1,16 +1,11 @@
 :root {
   --color-primary: #ae1c1c;
-  --color-primary-light: #d72323;
-  --color-primary-dark: #3d0000;
+  --color-primary-light: #ffe7e3;
   --color-text: #fff;
-  --color-text-light: #303841;
-  --color-background-light: #eeeeee;
-  --color-background-dark: #212121;
-  --color-yellow: #ffd93d;
+  --color-background-light: #f7f6f4;
   --color-white: #fff;
   --color-semi-white: #e8e8e8;
   --color-black: #000;
-  --color-dark: #3c4043;
 
   --16px: 1rem;
   --18px: 1.125rem;
@@ -20,14 +15,19 @@
   --32px: 2rem;
   --44px: 2.75rem;
   --48px: 3rem;
+  --52px: 3.25rem;
+  --58px: 3.625rem;
   --64px: 4rem;
+  --72px: 4.5rem;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: lexend, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
@@ -44,12 +44,13 @@ code {
     monospace;
 }
 
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
 .container {
   background-color: var(--color-background-light);
   min-height: 100dvh;
   transition: 0.5s ease-in-out;
-}
-
-.container.dark {
-  background-color: var(--color-background-dark);
 }
