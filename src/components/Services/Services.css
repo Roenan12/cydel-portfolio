@@ -1,82 +1,39 @@
-.services {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding-top: 5%;
-  color: var(--color-primary);
-  font-size: var(--64px);
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
-    0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
-    0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-  transition: 0.5s ease-in-out;
-}
-
-.dark .services {
-  text-shadow: 1px 1px var(--color-text);
-}
-
 .card-container {
   position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
   min-height: 400px;
-  padding: 100px 10vw;
+  padding: 20px 20vw;
   justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (max-width: 40rem) {
-  .services {
-    font-size: var(--44px);
-  }
-}
-
-@media screen and (max-width: 68rem) {
+/* 1920px */
+@media screen and (max-width: 120rem) {
   .card-container {
-    padding: 20px;
+    padding: 20px 15vw;
+  }
+}
+
+/* 1440 */
+@media screen and (max-width: 90rem) {
+  .card-container {
+    padding: 20px 10vw;
+  }
+}
+
+/* 1200px */
+@media screen and (max-width: 70rem) {
+  .card-container {
+    padding: 20px 0vw;
+  }
+}
+
+/* 640px-800px (xs) */
+@media screen and (max-width: 50rem) {
+  .card-container {
+    padding: 20px 5vw;
     flex-direction: column;
-  }
-}
-
-.focus-in-expand-fwd,
-.services {
-  -webkit-animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes focus-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-800px);
-    transform: translateZ(-800px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-@keyframes focus-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-800px);
-    transform: translateZ(-800px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
   }
 }

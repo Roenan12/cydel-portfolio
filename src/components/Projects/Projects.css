@@ -1,19 +1,7 @@
-.project-header {
-  color: var(--color-primary);
-  font-size: var(--64px);
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
-    0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
-    0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+.portfolio-container {
+  height: 100%;
 }
 
-.dark .project-header {
-  text-shadow: 1px 1px var(--color-text);
-}
 @media screen and (max-width: 45rem) {
   .project-header {
     text-align: center;
@@ -95,29 +83,11 @@
   );
 }
 
-.dark .slider::before {
-  left: 0;
-  background: linear-gradient(
-    to right,
-    rgba(33, 33, 33, 1),
-    rgba(33, 33, 33, 0)
-  );
-}
-
 .slider::after {
   right: 0;
   background: linear-gradient(
     to left,
     rgba(238, 238, 238, 1),
     rgba(238, 238, 238, 0)
-  );
-}
-
-.dark .slider::after {
-  right: 0;
-  background: linear-gradient(
-    to left,
-    rgba(33, 33, 33, 1),
-    rgba(33, 33, 33, 0)
   );
 }
