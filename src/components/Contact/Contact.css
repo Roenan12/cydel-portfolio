@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-.dark .contact-section {
-  color: var(--color-text);
-}
-
 .contact-header {
   display: inline-block;
   margin: 20px 0px;
@@ -27,10 +23,6 @@
 .contact-header button,
 .contact-header h1 {
   margin: 10px 0px;
-}
-
-.dark .contact-header button {
-  color: var(--color-primary-light);
 }
 
 .contact-header > p {
@@ -60,11 +52,6 @@
   gap: 20px;
   box-sizing: border-box;
   border-radius: 16px;
-}
-
-.dark .contact-container {
-  background: var(--color-dark);
-  color: var(--color-text);
 }
 
 /* 1536px (2xl) */
@@ -108,13 +95,6 @@ textarea {
   height: 50px;
   font-size: var(--16px);
   margin: 10px 0px;
-}
-
-.dark .contact-form input,
-.dark textarea {
-  background: var(--color-dark);
-  color: var(--color-text);
-  border-color: var(--color-semi-white);
 }
 
 .contact-form textarea {
@@ -197,10 +177,6 @@ textarea {
   border: 2px solid rgb(169, 169, 169);
   border-radius: 8px;
   margin: 10px 0px;
-}
-
-.dark .contact-list {
-  border-color: var(--color-dark);
 }
 
 .contact-icon {

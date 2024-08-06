@@ -9,7 +9,3 @@
   padding: 25px 7%;
   background-color: var(--color-primary);
 }
-
-.dark .footer {
-  background-color: var(--color-primary-dark);
-}
