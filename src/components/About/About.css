@@ -14,12 +14,13 @@
 .stats-item h1 {
   font-size: var(--36px);
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .stats-item p {
   font-size: var(--16px);
   font-weight: 300;
-  margin: 20px 0;
+  margin-bottom: 30px;
 }
 
 .round-container {
