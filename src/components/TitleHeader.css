@@ -10,6 +10,7 @@
   color: var(--color-black);
   font-size: var(--58px);
   font-weight: 400;
+  margin-top: 40px;
   margin-bottom: 25px;
 }
 
@@ -48,7 +49,7 @@
     padding: 50px 5vw;
   }
   .header-title {
-    font-size: var(--32px);
+    font-size: var(--26px);
     font-weight: 500;
   }
 }
