@@ -6,7 +6,7 @@
 
 .stats-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 10px 20vw;
 }
@@ -24,7 +24,7 @@
 
 .round-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 10px 15vw;
 }
@@ -77,10 +77,10 @@
   }
 }
 
-/* Small screens: 1 column layout */
+/* 640px-800px (xs) */
 @media (max-width: 50rem) {
   .round-container {
-    grid-template-columns: 1fr; /* 1 column */
+    grid-template-columns: 1fr;
     grid-gap: 15px;
     padding: 10px 3vw;
   }
