@@ -16,6 +16,7 @@
 
 .header-description {
   font-size: var(--18px);
+  font-weight: 300;
 }
 
 /* 1920px (2xl) */
