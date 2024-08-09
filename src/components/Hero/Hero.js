@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import garage from "../../assets/3-done.jpg";
+import home from "../../assets/home.png";
 import "./Hero.css";
 import { Loader } from "../Loader";
+import { ChevronRight } from "lucide-react";
 
 export function Hero({ isLoading, setIsLoading }) {
   useEffect(() => {
     const img = new Image();
-    img.src = garage;
+    img.src = home;
     if (img.complete) {
       setIsLoading(false);
     } else {
@@ -22,24 +23,31 @@ export function Hero({ isLoading, setIsLoading }) {
           ""
         ) : (
           <div className="hero-content">
-            <h2>Cydel Iron Works</h2>
-            <p>Your Roll up Door Specialist</p>
-
-            <a className="hero-btn" href="#contact">
-              Inquire Now
-            </a>
+            <h2>Secure Your Doors with Reliability</h2>
+            <h3>
+              We are Cydel Iron Works, your trusted partner in roll up door
+              services. With a legacy of excellence and a commitment to quality,
+              we turn your doors with security.
+            </h3>
+            <div>
+              <p>Get a free quotation now!</p>
+              <a className="hero-btn" href="#contact">
+                <button class="learn-btn">
+                  Learn More <ChevronRight />
+                </button>
+              </a>
+            </div>
           </div>
         )}
         {isLoading ? (
           <Loader size={100} />
         ) : (
           <img
-            className="hero-img kenburns-top"
-            src={garage}
+            className="hero-img fade-in"
+            src={home}
             alt="hero roll up door"
           />
         )}
-        <div className="hero-overlay"></div>
       </section>
     </>
   );
