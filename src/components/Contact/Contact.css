@@ -55,7 +55,14 @@
 }
 
 /* 1536px (2xl) */
-@media screen and (max-width: 96rem) {
+@media screen and (max-width: 120rem) {
+  .contact-section {
+    padding: 50px 15vw;
+  }
+}
+
+/* 1440px (lg-xl) */
+@media screen and (max-width: 90rem) {
   .contact-section {
     padding: 50px 10vw;
   }
