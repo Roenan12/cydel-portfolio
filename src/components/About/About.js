@@ -23,7 +23,7 @@ export function About() {
         <div className="round-container">
           {aboutLegacy.map((item, index) => (
             <div className="round-item" key={index}>
-              <CheckmarkIcon className="icon" />
+              <CheckmarkIcon className="check-icon" />
               {item.content}
             </div>
           ))}
