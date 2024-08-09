@@ -23,6 +23,20 @@ export const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
+export const aboutStats = [
+  { data: "780+", label: "Projects Completed" },
+  { data: "95%", label: "Satisfaction Rate" },
+  { data: "700+", label: "Satisfied Clients" },
+  { data: "25+", label: "Expert Installers" },
+];
+
+export const aboutLegacy = [
+  { content: "Always building quality shutters" },
+  { content: "Best manufacturing service provider" },
+  { content: "Using high-quality imported materials" },
+  { content: "Experienced roll-up door specialist" },
+];
+
 export const services = [
   {
     icon: <Warehouse size={32} />,
