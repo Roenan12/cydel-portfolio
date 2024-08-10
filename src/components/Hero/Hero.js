@@ -23,14 +23,14 @@ export function Hero({ isLoading, setIsLoading }) {
           ""
         ) : (
           <div className="hero-content">
-            <h2>Secure Your Doors with Reliability</h2>
-            <h3>
+            <h1 className="hero-title">Secure Your Doors with Reliability</h1>
+            <p className="hero-description">
               We are Cydel Iron Works, your trusted partner in roll up door
               services. With a legacy of excellence and a commitment to quality,
               we turn your doors with security.
-            </h3>
+            </p>
             <div>
-              <p>Get a free quotation now!</p>
+              <p className="hero-description">Get a free quotation now!</p>
               <a className="hero-btn" href="#contact">
                 <button class="learn-btn">
                   Learn More <ChevronRight />
