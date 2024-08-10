@@ -80,6 +80,9 @@
 
 /* 640px-800px (xs) */
 @media (max-width: 50rem) {
+  .about-section {
+    padding-bottom: 50px;
+  }
   .round-container {
     grid-template-columns: 1fr;
     grid-gap: 15px;
