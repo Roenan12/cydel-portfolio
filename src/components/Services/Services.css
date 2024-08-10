@@ -3,37 +3,69 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: 400px;
-  padding: 20px 20vw;
+  padding: 20px 15vw;
   justify-content: space-around;
   align-items: center;
+}
+
+.round-card {
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  padding: 20px;
+  margin: 10px;
+  height: 200px;
+  width: 100%;
+  text-align: start;
+}
+
+.round-card h3 {
+  font-size: var(--20px);
+  font-weight: 500;
+  margin-top: 65px;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-weight: 300;
+  margin: 0;
 }
 
 /* 1920px */
 @media screen and (max-width: 120rem) {
   .card-container {
-    padding: 20px 15vw;
+    padding: 20px 5vw;
   }
 }
 
 /* 1440 */
 @media screen and (max-width: 90rem) {
   .card-container {
-    padding: 20px 10vw;
+    padding: 20px 3vw;
   }
 }
 
 /* 1200px */
 @media screen and (max-width: 70rem) {
-  .card-container {
-    padding: 20px 0vw;
+  .round-card {
+    margin: 5px;
   }
 }
 
 /* 640px-800px (xs) */
 @media screen and (max-width: 50rem) {
   .card-container {
-    padding: 20px 5vw;
     flex-direction: column;
+  }
+
+  .round-card {
+    height: 160px;
+  }
+
+  .round-card h3 {
+    margin-top: 30px;
+  }
+
+  .card-icon {
+    margin-bottom: 25px;
   }
 }
