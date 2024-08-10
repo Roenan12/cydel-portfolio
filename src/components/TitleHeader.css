@@ -47,7 +47,7 @@
 /* 640px-800px (xs) */
 @media screen and (max-width: 50rem) {
   .header-section {
-    padding: 50px 5vw;
+    padding: 20px 5vw;
   }
   .header-title {
     font-size: var(--26px);
