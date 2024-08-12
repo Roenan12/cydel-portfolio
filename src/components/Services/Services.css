@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 20px 15vw;
+  padding: var(--20px) 15vw;
   justify-content: space-around;
   align-items: center;
 }
@@ -11,9 +11,8 @@
 .round-card {
   border: 1px solid #ddd;
   border-radius: 24px;
-  padding: 20px;
+  padding: var(--20px);
   margin: 10px;
-  height: 200px;
   width: 100%;
   text-align: start;
 }
@@ -33,14 +32,14 @@
 /* 1920px */
 @media screen and (max-width: 120rem) {
   .card-container {
-    padding: 20px 5vw;
+    padding: 5vw;
   }
 }
 
 /* 1440 */
 @media screen and (max-width: 90rem) {
   .card-container {
-    padding: 20px 3vw;
+    padding: 3vw;
   }
 }
 
@@ -55,10 +54,6 @@
 @media screen and (max-width: 50rem) {
   .card-container {
     flex-direction: column;
-  }
-
-  .round-card {
-    height: 160px;
   }
 
   .round-card h3 {
