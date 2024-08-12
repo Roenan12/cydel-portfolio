@@ -32,7 +32,7 @@ export function Hero({ isLoading, setIsLoading }) {
             <div>
               <p className="hero-description">Get a free quotation now!</p>
               <a className="hero-btn" href="#contact">
-                <button class="learn-btn">
+                <button className="learn-btn">
                   Learn More <ChevronRight />
                 </button>
               </a>
