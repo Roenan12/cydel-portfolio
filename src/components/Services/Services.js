@@ -2,9 +2,9 @@ import "./Services.css";
 import { TitleHeader } from "../TitleHeader";
 import { Card } from "./Card.js";
 import { ReactComponent as CheckmarkIcon } from "../../assets/checkmark.svg";
-import { cardContent } from "../../constants/index.js";
+import { applicationTypes, cardContent } from "../../constants/index.js";
 
-export function Services({ theme, onsetTheme }) {
+export function Services() {
   return (
     <>
       <TitleHeader
@@ -30,11 +30,26 @@ export function Services({ theme, onsetTheme }) {
       <TitleHeader
         title="What We Offer"
         description="At Cydel, we offer a comprehensive suite of roll up door services, meticulously tailored to match your unique establishments, ensuring success at every step."
-        id="services"
       />
       <section>
         <div className="card-container">
           <Card />
+        </div>
+      </section>
+
+      <TitleHeader
+        title="Application of our shutters"
+        description="At Cydel, our shutter doors are commonly used but not limited to:"
+      />
+      <section className="application-container">
+        <div className="grid-container">
+          {applicationTypes.map((item, index) => (
+            <div key={index} className="grid-item">
+              <div className="filled-icon">{item.icon}</div>
+
+              <p>{item.content}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>

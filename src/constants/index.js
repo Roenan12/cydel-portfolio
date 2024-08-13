@@ -1,6 +1,3 @@
-import { Warehouse } from "lucide-react";
-import { Wrench } from "lucide-react";
-import { ShieldCheck } from "lucide-react";
 import one from "../assets/1.jpg";
 import two from "../assets/2.jpg";
 import three from "../assets/3.jpg";
@@ -15,6 +12,15 @@ import { PhoneCall } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Facebook } from "lucide-react";
 import { Pulse } from "../components/Contact/Pulse";
+import { Building } from "lucide-react";
+import { Store } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
+import { Warehouse } from "lucide-react";
+import { CircleParking } from "lucide-react";
+import { Landmark } from "lucide-react";
+import { Blinds } from "lucide-react";
+import { Wrench } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 
 export const navItems = [
   { label: "About", href: "#about" },
@@ -57,7 +63,7 @@ export const cardContent = [
 
 export const services = [
   {
-    icon: <Warehouse size={32} />,
+    icon: <Blinds size={32} />,
     heading: "Installation",
     description:
       "Get your roll-up door installed within the day by our professional team, ensuring quick and hassle-free setup fit to your schedule.",
@@ -86,6 +92,15 @@ export const images = [
   { photo: seven },
   { photo: eight },
   { photo: nine },
+];
+
+export const applicationTypes = [
+  { content: "Commercial Buildings", icon: <Building /> },
+  { content: "Retail stores", icon: <Store /> },
+  { content: "Inside Shopping Malls", icon: <ShoppingBag /> },
+  { content: "Warehouse / Storage Room", icon: <Warehouse /> },
+  { content: "Parking Garage", icon: <CircleParking /> },
+  { content: "Banks, Airports, Hospitals etc. ", icon: <Landmark /> },
 ];
 
 export const shutterTypes = [
