@@ -31,7 +31,7 @@
 @media screen and (max-width: 75rem) {
   .card {
     width: 50%;
-    min-height: 320px;
+    min-height: 350px;
   }
 }
 
