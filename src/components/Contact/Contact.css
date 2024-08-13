@@ -68,8 +68,8 @@
   }
 }
 
-/* 1024px-1280px (lg-xl) */
-@media screen and (max-width: 80rem) {
+/* 1200px (sm-md) */
+@media screen and (max-width: 75rem) {
   .contact-section {
     padding: 50px 5vw;
   }
