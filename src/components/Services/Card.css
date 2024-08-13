@@ -28,7 +28,7 @@
 }
 
 /* 1200px */
-@media screen and (max-width: 70rem) {
+@media screen and (max-width: 75rem) {
   .card {
     width: 50%;
     min-height: 320px;

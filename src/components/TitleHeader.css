@@ -38,7 +38,7 @@
 }
 
 /* 1200px (sm-md) */
-@media screen and (max-width: 70rem) {
+@media screen and (max-width: 75rem) {
   .header-section {
     padding: 50px 5vw;
   }
