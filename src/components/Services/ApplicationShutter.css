@@ -1,0 +1,79 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding: 0;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--20px);
+  background-color: inherit;
+  font-size: var(--20px);
+}
+
+.filled-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.grid-item:nth-child(n + 1):nth-child(-n + 2),
+.grid-item:nth-child(n + 4):nth-child(-n + 5) {
+  border-right: 1px solid #000;
+}
+
+.grid-item:nth-child(n + 1):nth-child(-n + 3) {
+  border-bottom: 1px solid #000;
+}
+
+/* 1200px (sm-md) */
+@media screen and (max-width: 75rem) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Adjust borders for 2-column layout */
+  .grid-item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  .grid-item:nth-child(even) {
+    border-right: none !important;
+  }
+
+  .grid-item:nth-child(odd) {
+    border-right: 1px solid #000;
+  }
+
+  .grid-item:nth-child(n + 1):nth-child(-n + 4) {
+    border-bottom: 1px solid #000;
+  }
+}
+
+/* 640px-800px (xs) */
+@media screen and (max-width: 50rem) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item:nth-child(odd) {
+    border-right: none !important;
+  }
+
+  .grid-item:nth-child(n + 1) {
+    border-bottom: 1px solid #000;
+  }
+
+  .grid-item:first-child {
+    border-top: 1px solid #000;
+  }
+}

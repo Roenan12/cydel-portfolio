@@ -2,7 +2,8 @@ import "./Services.css";
 import { TitleHeader } from "../TitleHeader";
 import { Card } from "./Card.js";
 import { ReactComponent as CheckmarkIcon } from "../../assets/checkmark.svg";
-import { applicationTypes, cardContent } from "../../constants/index.js";
+import { cardContent } from "../../constants/index.js";
+import { ApplicationShutter } from "./ApplicationShutter.js";
 
 export function Services() {
   return (
@@ -42,15 +43,7 @@ export function Services() {
         description="At Cydel, our shutter doors are commonly used but not limited to:"
       />
       <section className="application-container">
-        <div className="grid-container">
-          {applicationTypes.map((item, index) => (
-            <div key={index} className="grid-item">
-              <div className="filled-icon">{item.icon}</div>
-
-              <p>{item.content}</p>
-            </div>
-          ))}
-        </div>
+        <ApplicationShutter />
       </section>
     </>
   );

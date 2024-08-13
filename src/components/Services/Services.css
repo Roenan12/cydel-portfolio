@@ -33,50 +33,9 @@
   padding: var(--20px) 15vw;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  padding: 0;
-}
-
-.grid-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--20px);
-  background-color: inherit;
-  font-size: var(--20px);
-}
-
-.filled-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--color-primary);
-  color: #fff;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.grid-item:nth-child(n + 1):nth-child(-n + 2),
-.grid-item:nth-child(n + 4):nth-child(-n + 5) {
-  border-right: 1px solid #000;
-}
-
-.grid-item:nth-child(n + 1):nth-child(-n + 3) {
-  border-bottom: 1px solid #000;
-}
-
 /* 1920px */
 @media screen and (max-width: 120rem) {
-  .card-container {
-    padding: 5vw;
-  }
-
+  .card-container,
   .application-container {
     padding: 5vw;
   }
@@ -84,16 +43,13 @@
 
 /* 1440 */
 @media screen and (max-width: 90rem) {
-  .card-container {
+  .card-container,
+  .application-container {
     padding: 3vw;
   }
 
   .round-card {
     height: 220px;
-  }
-
-  .application-container {
-    padding: 3vw;
   }
 }
 
@@ -101,27 +57,6 @@
 @media screen and (max-width: 75rem) {
   .round-card {
     margin: 5px;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Adjust borders for 2-column layout */
-  .grid-item:nth-last-child(-n + 2) {
-    border-bottom: none;
-  }
-
-  .grid-item:nth-child(even) {
-    border-right: none !important;
-  }
-
-  .grid-item:nth-child(odd) {
-    border-right: 1px solid #000;
-  }
-
-  .grid-item:nth-child(n + 1):nth-child(-n + 4) {
-    border-bottom: 1px solid #000;
   }
 }
 
@@ -140,21 +75,5 @@
 
   .card-icon {
     margin-bottom: 25px;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-item:nth-child(odd) {
-    border-right: none !important;
-  }
-
-  .grid-item:nth-child(n + 1) {
-    border-bottom: 1px solid #000;
-  }
-
-  .grid-item:first-child {
-    border-top: 1px solid #000;
   }
 }

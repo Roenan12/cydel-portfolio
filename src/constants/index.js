@@ -96,7 +96,7 @@ export const images = [
 
 export const applicationTypes = [
   { content: "Commercial Buildings", icon: <Building /> },
-  { content: "Retail stores", icon: <Store /> },
+  { content: "Retail Stores", icon: <Store /> },
   { content: "Inside Shopping Malls", icon: <ShoppingBag /> },
   { content: "Warehouse / Storage Room", icon: <Warehouse /> },
   { content: "Parking Garage", icon: <CircleParking /> },
