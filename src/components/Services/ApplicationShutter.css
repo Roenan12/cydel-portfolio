@@ -61,6 +61,9 @@
 
 /* 640px-800px (xs) */
 @media screen and (max-width: 50rem) {
+  .grid-item {
+    font-size: var(--16px);
+  }
   .grid-container {
     grid-template-columns: 1fr;
   }
