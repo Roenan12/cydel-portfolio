@@ -5,6 +5,7 @@ import { ReactComponent as CheckmarkIcon } from "../../assets/checkmark.svg";
 import { cardContent } from "../../constants/index.js";
 import { Shutters } from "./Shutters.js";
 import { ApplicationShutter } from "./ApplicationShutter.js";
+import { operation } from "../../constants/index.js";
 
 export function Services() {
   return (
@@ -53,6 +54,21 @@ export function Services() {
       />
       <section>
         <Shutters />
+      </section>
+
+      <TitleHeader
+        title="Operation Type"
+        description="Select the best operation that fits your roll up door:"
+      />
+      <section>
+        <div className="operation-container">
+          {operation.map((operation, index) => (
+            <div className="operation" key={index}>
+              <h3>{operation.type}</h3>
+              <p>{operation.description}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );

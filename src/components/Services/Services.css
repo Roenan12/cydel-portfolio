@@ -33,11 +33,37 @@
   padding: var(--20px) 15vw;
 }
 
+.operation-container {
+  padding: 10px 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.operation {
+  padding: 0 100px 0 20px;
+  border-left: 5px solid var(--color-primary);
+}
+
+.operation h3 {
+  font-weight: 500;
+  font-size: var(--22px);
+  margin-bottom: 10px;
+}
+
+.operation p {
+  font-weight: 300;
+  font-size: var(--18px);
+  line-height: 1.6rem;
+}
+
 /* 1920px */
 @media screen and (max-width: 120rem) {
   .card-container,
   .application-container {
     padding: 5vw;
+  }
+  .operation-container {
+    padding: 20px 10vw;
   }
 }
 
@@ -51,12 +77,20 @@
   .round-card {
     height: 220px;
   }
+
+  .operation-container {
+    padding: 20px 5vw;
+  }
 }
 
 /* 1200px */
 @media screen and (max-width: 75rem) {
   .round-card {
     margin: 5px;
+  }
+
+  .operation {
+    padding: 0 20px;
   }
 }
 
@@ -75,5 +109,20 @@
 
   .card-icon {
     margin-bottom: 25px;
+  }
+
+  .operation-container {
+    grid-template-columns: 1fr;
+    padding: 10px 3vw;
+  }
+  .operation {
+    margin-bottom: 40px;
+  }
+
+  .operation h3 {
+    font-size: var(--20px);
+  }
+  .operation p {
+    font-size: var(--16px);
   }
 }
