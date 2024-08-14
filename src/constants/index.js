@@ -21,6 +21,11 @@ import { Landmark } from "lucide-react";
 import { Blinds } from "lucide-react";
 import { Wrench } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
+import galvalume from "../assets/shutters/galvalum.png";
+import aluminum from "../assets/shutters/aluminum.png";
+import stainless from "../assets/shutters/stainless.png";
+import grilles from "../assets/shutters/grilles.png";
+import poly from "../assets/shutters/polycarbonate.png";
 
 export const navItems = [
   { label: "About", href: "#about" },
@@ -105,11 +110,12 @@ export const applicationTypes = [
 
 export const shutterTypes = [
   {
-    title: "Galvalume Shutters",
+    image: galvalume,
+    title: "Galvalume",
     details:
       "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
     slat: ["75mm C-type", "Available in Ga.24 | Ga.22 | Ga.18 thickness"],
-    size: "Maximum of 7 meters width(single panel)\nMinimum of 1 meter width(single panel)",
+    size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
       "Perforated curtains or vent holes for ventiliation purposes",
       "Galvalume wicket door for service entry",
@@ -118,33 +124,36 @@ export const shutterTypes = [
       "Commonly used but not limited to commercial and retail stores, warehouse, loading bays, and factories",
   },
   {
-    title: "Aluminum Shutters",
+    image: aluminum,
+    title: "Aluminum",
     details:
       "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
     slat: ["75mm C-type", "Available in Ga.24 | Ga.22 | Ga.18 thickness"],
-    size: "Maximum of 7 meters width(single panel)\nMinimum of 1 meter width(single panel)",
+    size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
       "Perforated curtains or vent holes for ventiliation purposes",
       "Aluminum wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, clean rooms, and sotrage rooms",
+      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms",
   },
   {
-    title: "Stainless Steel Shutters",
+    image: stainless,
+    title: "Stainless Steel",
     details:
       "These shutter are designed to provide you with maximum security. Stainless steel adds elegance and strength compared to other shutters.",
     slat: ["75mm C-type", "Available in Ga.24 | Ga.22 | Ga.18 thickness"],
-    size: "Maximum of 7 meters width(single panel)\nMinimum of 1 meter width(single panel)",
+    size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
       "Perforated curtains or vent holes for ventiliation purposes",
       "Stainless steel wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, clean rooms, and sotrage rooms",
+      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms",
   },
   {
-    title: "Aluminum Grilles Shutters",
+    image: grilles,
+    title: "Aluminum Grilles",
     details:
       "Ideal for establishments which require security and ventilation while maintaining high level of visibility.",
     slat: [
@@ -152,7 +161,7 @@ export const shutterTypes = [
       "Inside these aluminum tube are metal shafting which gives the grilles strength for total security",
       "Available in venetian type design",
     ],
-    size: "Maximum of 7 meters width(single panel)\nMinimum of 1 meter width(single panel)",
+    size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
       "Perforated curtains or vent holes for ventiliation purposes",
       "Wicket door for service entry",
@@ -161,14 +170,15 @@ export const shutterTypes = [
       "Commonly used but not limited to stores inside the shopping malls, store fronts, and parking garage",
   },
   {
-    title: "Polycarbonate Shutters",
+    image: poly,
+    title: "Polycarbonate",
     details:
       "These shutter are designed to provide security and transparency. It is best for advertising products even when the shops are closed, providing 80% vision inside the store.",
     slat: [
       "2mm thick UV-resistant, polycarbonate slats",
       "200 times stronger than glass of the same thickness",
     ],
-    size: "Maximum of 5.80 meters width(single panel)\nMinimum of 1 meter width(single panel)",
+    size: "Maximum of 5.80 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: ["Wicket door for service entry"],
     application:
       "Commonly used but not limited to stores inside the shopping malls, banks, airports, and hospitals.",

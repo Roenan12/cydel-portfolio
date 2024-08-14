@@ -3,14 +3,15 @@ import { TitleHeader } from "../TitleHeader";
 import { Card } from "./Card.js";
 import { ReactComponent as CheckmarkIcon } from "../../assets/checkmark.svg";
 import { cardContent } from "../../constants/index.js";
+import { Shutters } from "./Shutters.js";
 import { ApplicationShutter } from "./ApplicationShutter.js";
 
 export function Services() {
   return (
     <>
       <TitleHeader
-        title="Why Choose Us"
-        description="At Cydel Roll Up Doors, our commitment to excellence, unparalleled expertise, and unwavering dedication set us apart. Here's why you should choose us:"
+        title="Why Choose Cydel"
+        description="At Cydel, our commitment to excellence, unparalleled expertise, and unwavering dedication set us apart. Here's why you should choose us:"
         id="services"
       />
       <section className="card-container">
@@ -29,7 +30,7 @@ export function Services() {
         ))}
       </section>
       <TitleHeader
-        title="What We Offer"
+        title="Tailored Fabrication Solutions"
         description="At Cydel, we offer a comprehensive suite of roll up door services, meticulously tailored to match your unique establishments, ensuring success at every step."
       />
       <section>
@@ -40,10 +41,18 @@ export function Services() {
 
       <TitleHeader
         title="Application of our shutters"
-        description="At Cydel, our shutter doors are commonly used but not limited to:"
+        description="Our shutter doors are commonly used but not limited to:"
       />
       <section className="application-container">
         <ApplicationShutter />
+      </section>
+
+      <TitleHeader
+        title="Our Shutters"
+        description="Elevate your entrance with our custom shutters, crafted from a variety of premium materials to suit your unique preferences:"
+      />
+      <section>
+        <Shutters />
       </section>
     </>
   );

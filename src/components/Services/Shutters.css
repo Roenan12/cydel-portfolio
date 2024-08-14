@@ -1,0 +1,130 @@
+.shutter-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: var(--20px) 15vw;
+  gap: 10px;
+}
+
+.shutter-column {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 10px;
+  height: 475px;
+}
+
+.shutter-column img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.inner-grid-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr) 1fr;
+  gap: 10px;
+  height: 200px;
+}
+
+.inner-grid-btn div {
+  background-color: white;
+  border: none;
+  text-align: center;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shutter-btn {
+  border: none;
+  width: 100%;
+  padding: 20px;
+  font-size: var(--18px);
+  font-weight: 300;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.shutter-btn.selected {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.shutter-btn:hover {
+  transform: scale(0.95);
+}
+
+.inner-grid-btn .full-width {
+  grid-column: span 2;
+}
+
+.content-column {
+  background-color: #fff;
+  border: none;
+  padding: 10px 10px;
+}
+
+.content-column h1 {
+  font-weight: 600;
+}
+
+.content-column h3 {
+  font-weight: 500;
+}
+
+.content-column p {
+  font-size: var(--18px);
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* 1920px (2xl) */
+@media screen and (max-width: 120rem) {
+  .shutter-container {
+    padding: var(--20px) 10vw;
+  }
+}
+
+/* 1440px (lg-xl) */
+@media screen and (max-width: 90rem) {
+  .shutter-container {
+    padding: var(--20px) 5vw;
+  }
+}
+
+/* 1200px (sm-md) */
+@media screen and (max-width: 75rem) {
+  .shutter-container {
+    grid-template-columns: 1fr 1fr;
+    padding: var(--20px) 3vw;
+  }
+
+  .shutter-column {
+    grid-template-rows: auto;
+  }
+}
+
+/* 640px-800px (xs) */
+@media screen and (max-width: 50rem) {
+  .shutter-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .shutter-btn {
+    font-size: var(--16px);
+  }
+
+  .content-column p {
+    font-size: var(--16px);
+  }
+}
