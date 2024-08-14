@@ -185,6 +185,19 @@ export const shutterTypes = [
   },
 ];
 
+export const operation = [
+  {
+    type: "Manual Operation",
+    description:
+      "Simple and reliable, manually operated roll-up doors are perfect for smaller openings with a maximum length of 3 meters. They require physical effort to open and close, making them ideal for areas where power is unavailable or not required.",
+  },
+  {
+    type: "Motorized Operation",
+    description:
+      "Convenient and efficient, motorized roll-up doors offer automated control through push button and remote. With a minimum of 4 meters in length, this operation are also equipped with a chain operation for manual use during power outages, providing reliable access and security in all situations.",
+  },
+];
+
 export const contacts = [
   {
     ping: <Pulse />,
