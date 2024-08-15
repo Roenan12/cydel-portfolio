@@ -35,10 +35,10 @@ export const navItems = [
 ];
 
 export const aboutStats = [
-  { data: "780+", label: "Projects Completed" },
-  { data: "95%", label: "Satisfaction Rate" },
-  { data: "700+", label: "Satisfied Clients" },
-  { data: "25+", label: "Expert Installers" },
+  { data: 780, symbol: "+", label: "Projects Completed" },
+  { data: 95, symbol: "%", label: "Satisfaction Rate" },
+  { data: 700, symbol: "+", label: "Satisfied Clients" },
+  { data: 25, symbol: "+", label: "Expert Installers" },
 ];
 
 export const aboutLegacy = [

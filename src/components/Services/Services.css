@@ -1,18 +1,16 @@
 .card-container {
   position: relative;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
   width: 100%;
   padding: var(--20px) 15vw;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .round-card {
   border: 1px solid #ddd;
   border-radius: 24px;
   padding: var(--20px);
-  margin: 10px;
   width: 100%;
   text-align: start;
 }
@@ -60,7 +58,7 @@
 @media screen and (max-width: 120rem) {
   .card-container,
   .application-container {
-    padding: 5vw;
+    padding: 10px 5vw;
   }
   .operation-container {
     padding: 20px 10vw;
@@ -71,7 +69,7 @@
 @media screen and (max-width: 90rem) {
   .card-container,
   .application-container {
-    padding: 3vw;
+    padding: 20px 3vw;
   }
 
   .round-card {
@@ -97,11 +95,15 @@
 /* 640px-800px (xs) */
 @media screen and (max-width: 50rem) {
   .card-container {
+    display: flex;
     flex-direction: column;
+    padding-right: 5vw;
+    grid-gap: 10px;
   }
 
   .round-card {
     height: auto;
+    width: 100%;
   }
   .round-card h3 {
     margin-top: 30px;

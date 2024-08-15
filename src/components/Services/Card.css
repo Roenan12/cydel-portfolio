@@ -7,8 +7,7 @@
 }
 
 .card {
-  justify-content: center;
-  width: 50%;
+  width: 100%;
   margin: 10px;
   background: var(--background);
   color: var(--textColor);
@@ -29,18 +28,10 @@
 
 /* 1200px */
 @media screen and (max-width: 75rem) {
-  .card {
-    width: 50%;
-    min-height: 350px;
-  }
 }
 
 /* 640px-800px (xs) */
 @media screen and (max-width: 50rem) {
-  .card {
-    width: 100%;
-    min-height: 100%;
-  }
 }
 
 .card:hover {
