@@ -3,6 +3,7 @@ import home from "../../assets/home.png";
 import "./Hero.css";
 import { Loader } from "../Loader";
 import { ChevronRight } from "lucide-react";
+import { Fade } from "react-awesome-reveal";
 
 export function Hero({ isLoading, setIsLoading }) {
   useEffect(() => {
@@ -22,7 +23,7 @@ export function Hero({ isLoading, setIsLoading }) {
         {isLoading ? (
           ""
         ) : (
-          <div className="hero-content">
+          <div className="hero-content fade-in">
             <h1 className="hero-title">Secure Your Doors with Reliability</h1>
             <p className="hero-description">
               We are Cydel Iron Works, your trusted partner in roll up door

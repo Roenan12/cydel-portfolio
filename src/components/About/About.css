@@ -12,6 +12,8 @@
 }
 
 .stats-item h1 {
+  display: flex;
+  align-items: center;
   font-size: var(--36px);
   font-weight: 400;
   margin-bottom: 10px;
