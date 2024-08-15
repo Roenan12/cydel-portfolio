@@ -7,7 +7,7 @@ import { Loader } from "../Loader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export function Contact({ isLoading, setIsLoading, theme }) {
+export function Contact({ isLoading, setIsLoading }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

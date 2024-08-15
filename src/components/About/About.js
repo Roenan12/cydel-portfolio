@@ -48,11 +48,10 @@ export function About() {
   }
 
   return (
-    <div className="about-section">
+    <div className="about-section" id="about">
       <TitleHeader
         title="Our Legacy of Excellence"
         description="Established 2008, Cydel has been a leading force in the iron works industry, specializing in roll up doors services. Our commitment to quality and innovation sets us apart"
-        id="about"
       />
       <section>
         <div className="stats-container">

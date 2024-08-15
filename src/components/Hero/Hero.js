@@ -3,7 +3,6 @@ import home from "../../assets/home.png";
 import "./Hero.css";
 import { Loader } from "../Loader";
 import { ChevronRight } from "lucide-react";
-import { Fade } from "react-awesome-reveal";
 
 export function Hero({ isLoading, setIsLoading }) {
   useEffect(() => {
