@@ -47,7 +47,13 @@
   font-weight: 500;
 }
 
+.nav-item .active {
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--color-black);
+}
+
 .nav-menu .nav-item a:hover {
+  cursor: pointer;
   padding-bottom: 12px;
   border-bottom: 3px solid var(--color-black);
 }

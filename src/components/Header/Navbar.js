@@ -4,6 +4,7 @@ import { navItems } from "../../constants";
 import cydel from "../../assets/cydel.png";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
+import { Link } from "react-scroll";
 
 export function Navbar() {
   //change nav color on scroll
@@ -30,24 +31,27 @@ export function Navbar() {
     <header className={colorNav ? "header header-bg" : "header"}>
       <nav className={`navbar ${clickMenu ? "active" : ""}`}>
         <div className="logo">
-          <a href="#home">
+          <Link href="/">
             <img className="cydel-logo" src={cydel} alt="company logo" />
-          </a>
-          <a href="#home">
+          </Link>
+          <a href="/">
             <span>Cydel</span>
           </a>
         </div>
 
         <ul className={clickMenu ? "nav-menu active" : "nav-menu"}>
           {navItems.map((item, index) => (
-            <li
-              className="nav-item"
-              key={index}
-              onClick={() => setClickMenu(false)}
-            >
-              <a href={item.href} onClick={handleClickMenu}>
+            <li className="nav-item" key={index}>
+              <Link
+                to={item.href}
+                spy={true}
+                smooth={true}
+                offset={item.offset}
+                duration={500}
+                onClick={() => setClickMenu(false)}
+              >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

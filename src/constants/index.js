@@ -28,10 +28,10 @@ import grilles from "../assets/shutters/grilles.png";
 import poly from "../assets/shutters/polycarbonate.png";
 
 export const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "about", offset: -90 },
+  { label: "Services", href: "services", offset: -80 },
+  { label: "Projects", href: "projects", offset: -70 },
+  { label: "Contact", href: "contact", offset: 0 },
 ];
 
 export const aboutStats = [
