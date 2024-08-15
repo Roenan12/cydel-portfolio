@@ -11,8 +11,9 @@ export function Card() {
           delay={index * 500}
           direction="up"
           triggerOnce={true}
+          key={index}
         >
-          <div className="card" key={index}>
+          <div className="card">
             <div className="card-icon">{item.icon}</div>
             <div className="card-heading">{item.heading}</div>
             <p className="card-description">{item.description}</p>
