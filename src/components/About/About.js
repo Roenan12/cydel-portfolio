@@ -74,8 +74,9 @@ export function About() {
               delay={index * 500}
               direction="down"
               triggerOnce={true}
+              key={index}
             >
-              <div className="round-item" key={index}>
+              <div className="round-item">
                 <CheckmarkIcon className="check-icon" />
                 {item.content}
               </div>

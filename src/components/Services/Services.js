@@ -25,11 +25,11 @@ export function Services() {
               delay={index * 200}
               direction="down"
               triggerOnce={true}
+              key={index}
             >
               <div
                 style={{ backgroundColor: item.background }}
                 className="round-card"
-                key={index}
               >
                 <div>
                   <CheckmarkIcon className="check-icon" />
@@ -79,8 +79,9 @@ export function Services() {
               delay={index * 500}
               direction="left"
               triggerOnce={true}
+              key={index}
             >
-              <div className="operation" key={index}>
+              <div className="operation">
                 <h3>{operation.type}</h3>
                 <p>{operation.description}</p>
               </div>
