@@ -3,7 +3,7 @@ import "./Shutters.css";
 import { shutterTypes } from "../../constants";
 import { Fade } from "react-awesome-reveal";
 
-export function Shutters() {
+function Shutters() {
   const [selectedShutter, setSelectedShutter] = useState(shutterTypes[0]); // Default to Galvalume
 
   const handleShutterChange = (shutter) => {
@@ -62,3 +62,5 @@ export function Shutters() {
     </Fade>
   );
 }
+
+export default Shutters;

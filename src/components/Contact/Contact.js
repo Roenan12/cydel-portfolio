@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { contacts } from "../../constants/index";
+import { contacts } from "../../constants";
 import "./Contact.css";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -7,7 +7,7 @@ import { Loader } from "../Loader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export function Contact({ isLoading, setIsLoading }) {
+function Contact({ isLoading, setIsLoading }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -138,3 +138,5 @@ export function Contact({ isLoading, setIsLoading }) {
     </>
   );
 }
+
+export default Contact;

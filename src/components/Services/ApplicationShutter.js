@@ -1,8 +1,9 @@
+import React from "react";
 import "./ApplicationShutter.css";
-import { applicationTypes } from "../../constants/index.js";
+import { applicationTypes } from "../../constants";
 import { Fade } from "react-awesome-reveal";
 
-export function ApplicationShutter() {
+function ApplicationShutter() {
   return (
     <>
       <Fade triggerOnce={true} duration={1500}>
@@ -18,3 +19,5 @@ export function ApplicationShutter() {
     </>
   );
 }
+
+export default ApplicationShutter;

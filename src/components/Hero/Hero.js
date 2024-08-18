@@ -4,7 +4,7 @@ import "./Hero.css";
 import { Loader } from "../Loader";
 import { ChevronRight } from "lucide-react";
 
-export function Hero({ isLoading, setIsLoading }) {
+function Hero({ isLoading, setIsLoading }) {
   useEffect(() => {
     const img = new Image();
     img.src = home;
@@ -52,3 +52,5 @@ export function Hero({ isLoading, setIsLoading }) {
     </>
   );
 }
+
+export default Hero;

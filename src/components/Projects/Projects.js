@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.css";
-import { TitleHeader } from "../TitleHeader";
+import TitleHeader from "../TitleHeader";
 import { images } from "../../constants/index";
 
-export function Projects() {
+function Projects() {
   return (
     <>
       <div id="projects">
@@ -37,3 +37,5 @@ export function Projects() {
     </>
   );
 }
+
+export default Projects;

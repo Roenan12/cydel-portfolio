@@ -1,7 +1,8 @@
+import React from "react";
 import "./TitleHeader.css";
 import { Fade } from "react-awesome-reveal";
 
-export function TitleHeader({ title, description, id }) {
+function TitleHeader({ title, description, id }) {
   return (
     <Fade triggerOnce={true} duration={2000}>
       <div className="header-section">
@@ -13,3 +14,5 @@ export function TitleHeader({ title, description, id }) {
     </Fade>
   );
 }
+
+export default TitleHeader;
