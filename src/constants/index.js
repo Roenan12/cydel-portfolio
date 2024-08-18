@@ -7,20 +7,22 @@ import six from "../assets/6.jpg";
 import seven from "../assets/7.jpg";
 import eight from "../assets/8.jpg";
 import nine from "../assets/9.jpg";
-import { MapPin } from "lucide-react";
-import { PhoneCall } from "lucide-react";
-import { Mail } from "lucide-react";
-import { Facebook } from "lucide-react";
-import { Pulse } from "../components/Contact/Pulse";
-import { Building } from "lucide-react";
-import { Store } from "lucide-react";
-import { ShoppingBag } from "lucide-react";
-import { Warehouse } from "lucide-react";
-import { CircleParking } from "lucide-react";
-import { Landmark } from "lucide-react";
-import { Blinds } from "lucide-react";
-import { Wrench } from "lucide-react";
-import { ShieldCheck } from "lucide-react";
+import {
+  MapPin,
+  PhoneCall,
+  Mail,
+  Facebook,
+  Building,
+  Store,
+  ShoppingBag,
+  Warehouse,
+  CircleParking,
+  Landmark,
+  Blinds,
+  Wrench,
+  ShieldCheck,
+} from "lucide-react";
+import Pulse from "../components/Contact/Pulse";
 import galvalume from "../assets/shutters/galvalum.png";
 import aluminum from "../assets/shutters/aluminum.png";
 import stainless from "../assets/shutters/stainless.png";

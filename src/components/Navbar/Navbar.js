@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { navItems } from "../../constants";
 import cydel from "../../assets/cydel.png";
-import { Menu } from "lucide-react";
-import { X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
 
-export function Navbar() {
+function Navbar() {
   //change nav color on scroll
   const [colorNav, setNavColor] = useState(false);
 
@@ -31,12 +30,12 @@ export function Navbar() {
     <header className={colorNav ? "header header-bg" : "header"}>
       <nav className={`navbar ${clickMenu ? "active" : ""}`}>
         <div className="logo">
-          <Link href="/">
+          <Link to="home" spy={true} smooth={true} duration={500}>
             <img className="cydel-logo" src={cydel} alt="company logo" />
           </Link>
-          <a href="/">
+          <Link to="home" spy={true} smooth={true} duration={500}>
             <span>Cydel</span>
-          </a>
+          </Link>
         </div>
 
         <ul className={clickMenu ? "nav-menu active" : "nav-menu"}>
@@ -84,3 +83,5 @@ export function Navbar() {
     </header>
   );
 }
+
+export default Navbar;

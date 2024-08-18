@@ -1,14 +1,12 @@
+import React from "react";
 import "./Services.css";
-import { TitleHeader } from "../TitleHeader";
-import { Card } from "./Card.js";
+import TitleHeader from "../TitleHeader";
+import { ApplicationShutter, Card, Shutters } from "./index";
 import { ReactComponent as CheckmarkIcon } from "../../assets/checkmark.svg";
-import { cardContent } from "../../constants/index.js";
-import { Shutters } from "./Shutters.js";
-import { ApplicationShutter } from "./ApplicationShutter.js";
-import { operation } from "../../constants/index.js";
+import { cardContent, operation } from "../../constants";
 import { Fade } from "react-awesome-reveal";
 
-export function Services() {
+function Services() {
   return (
     <>
       <div id="services">
@@ -93,3 +91,5 @@ export function Services() {
     </>
   );
 }
+
+export default Services;

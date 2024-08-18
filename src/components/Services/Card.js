@@ -1,8 +1,9 @@
+import React from "react";
 import "./Card.css";
 import { services } from "../../constants";
 import { Fade } from "react-awesome-reveal";
 
-export function Card() {
+function Card() {
   return (
     <>
       {services.map((item, index) => (
@@ -23,3 +24,5 @@ export function Card() {
     </>
   );
 }
+
+export default Card;

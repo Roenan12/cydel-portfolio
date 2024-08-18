@@ -1,12 +1,13 @@
+import React from "react";
 import "./About.css";
-import { TitleHeader } from "../TitleHeader";
+import TitleHeader from "../TitleHeader";
 import { aboutStats, aboutLegacy } from "../../constants";
 import { ReactComponent as CheckmarkIcon } from "../../assets/checkmark.svg";
 import { useSpring, animated } from "react-spring";
 import { Fade } from "react-awesome-reveal";
 import { useEffect, useRef, useState } from "react";
 
-export function About() {
+function About() {
   function Number({ n }) {
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -86,3 +87,5 @@ export function About() {
     </div>
   );
 }
+
+export default About;

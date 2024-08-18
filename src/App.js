@@ -1,11 +1,13 @@
-import { useState } from "react";
-import { Navbar } from "./components/Header/Navbar.js";
-import { Hero } from "./components/Hero/Hero.js";
-import { About } from "./components/About/About.js";
-import { Services } from "./components/Services/Services.js";
-import { Projects } from "./components/Projects/Projects.js";
-import { Contact } from "./components/Contact/Contact.js";
-import { Footer } from "./components/Footer/Footer.js";
+import React, { useState } from "react";
+import {
+  Navbar,
+  Hero,
+  About,
+  Services,
+  Projects,
+  Contact,
+  Footer,
+} from "./components";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
