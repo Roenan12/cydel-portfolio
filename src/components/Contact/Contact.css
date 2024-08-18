@@ -25,6 +25,7 @@
 
 .contact-header > p {
   margin: 20px 0px;
+  font-weight: 300;
 }
 
 .contact-header h1 {
@@ -50,6 +51,11 @@
   gap: 20px;
   box-sizing: border-box;
   border-radius: 16px;
+}
+
+input,
+textarea {
+  font-weight: 300;
 }
 
 /* 1536px (2xl) */
