@@ -15,7 +15,7 @@ const CardGallery = () => {
       const smallScreen = 50 * 16; // 50rem
 
       if (screenWidth <= smallScreen) {
-        setCardsPerSlide(3);
+        setCardsPerSlide(1);
       } else if (screenWidth <= mediumScreen) {
         setCardsPerSlide(4);
       } else {
