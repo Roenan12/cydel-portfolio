@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import TitleHeader from "../TitleHeader";
-import { images } from "../../constants/index";
+import InfiniteSlider from "./InfiniteSlider";
 
 function Projects() {
   return (
@@ -15,23 +15,7 @@ function Projects() {
         />
 
         <section className="portfolio-container">
-          <div className="slider-container">
-            <div className="slider">
-              <div className="slide-track">
-                {images.map((items, index) => (
-                  <div className="slide" key={index}>
-                    <img src={items.photo} alt="installed roll up doors"></img>
-                  </div>
-                ))}
-
-                {images.map((items, index) => (
-                  <div className="slide" key={index}>
-                    <img src={items.photo} alt="installed roll up doors"></img>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <InfiniteSlider />
         </section>
       </div>
     </>
