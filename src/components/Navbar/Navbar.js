@@ -54,7 +54,13 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <a className="nav-btn" href="#contact">
+        <Link
+          className="nav-btn"
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <p>Inquire</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +76,7 @@ function Navbar() {
               d="M14 5l7 7m0 0l-7 7m7-7H3"
             />
           </svg>
-        </a>
+        </Link>
 
         <div className="hamburger" onClick={handleClickMenu}>
           {clickMenu ? (
