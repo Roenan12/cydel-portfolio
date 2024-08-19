@@ -1,10 +1,25 @@
-.portfolio-container {
-  padding: 50px 0;
+.project-container {
+  padding: 0px 15vw;
+  padding-bottom: 50px;
 }
 
-@media screen and (max-width: 45rem) {
-  .project-header {
-    text-align: center;
-    font-size: var(--44px);
+/* 1920px (2xl) */
+@media screen and (max-width: 120rem) {
+  .project-container {
+    padding: 10px 5vw;
+  }
+}
+
+/* 1440px (lg-xl) */
+@media screen and (max-width: 90rem) {
+  .project-container {
+    padding: 10px 3vw;
+  }
+}
+
+/* 640px-800px (xs) */
+@media screen and (max-width: 50rem) {
+  .project-container {
+    padding: 10px 0vw;
   }
 }

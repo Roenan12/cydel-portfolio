@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import TitleHeader from "../TitleHeader";
-import InfiniteSlider from "./InfiniteSlider";
+import { CardGallery, InfiniteSlider } from "./index";
 
 function Projects() {
   return (
@@ -14,7 +14,10 @@ function Projects() {
         crafted to perfection"
         />
 
-        <section className="portfolio-container">
+        <section>
+          <div className="project-container">
+            <CardGallery />
+          </div>
           <InfiniteSlider />
         </section>
       </div>
