@@ -1,0 +1,143 @@
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+
+.gallery-card {
+  height: 350px;
+  background-color: var(--color-white);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: start;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.gallery-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-image {
+  max-width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery-card h3 {
+  font-size: var(--18px);
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.gallery-card p {
+  font-size: var(--16px);
+  font-weight: 300;
+}
+
+.gallery-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.gallery-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: var(--color-white);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color-semi-white);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 1920px (2xl) */
+@media screen and (max-width: 120rem) {
+}
+
+/* 1440px (lg-xl) */
+@media screen and (max-width: 90rem) {
+  .gallery-card {
+    padding-bottom: 32px;
+  }
+}
+
+/* 1200px (sm-md) */
+@media screen and (max-width: 75rem) {
+  .gallery-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 640px-800px (xs) */
+@media screen and (max-width: 50rem) {
+  .gallery-card {
+    padding-bottom: 0;
+  }
+  .gallery-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-img-container {
+    height: 60%;
+  }
+  .gallery-container button {
+    padding: 12px 2px;
+    margin: 0 2px;
+  }
+}

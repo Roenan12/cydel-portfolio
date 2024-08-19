@@ -28,6 +28,13 @@ import aluminum from "../assets/shutters/aluminum.png";
 import stainless from "../assets/shutters/stainless.png";
 import grilles from "../assets/shutters/grilles.png";
 import poly from "../assets/shutters/polycarbonate.png";
+import manualGalv1 from "../assets/projects/manual-galv-1.jpg";
+import manualGalv2 from "../assets/projects/manual-galv-2.jpg";
+import motorGalv1 from "../assets/projects/motor-galv.jpg";
+import motorGalv2 from "../assets/projects/motor-galv-2.jpg";
+import motorGalv3 from "../assets/projects/motor-galv-3.jpg";
+import polycarbonate from "../assets/projects/polycarbonate.jpg";
+import combination from "../assets/projects/combination.jpg";
 
 export const navItems = [
   { label: "About", href: "about", offset: -90 },
@@ -197,6 +204,45 @@ export const operation = [
     type: "Motorized Operation",
     description:
       "Convenient and efficient, motorized roll-up doors offer automated control through push button and remote. With a minimum of 4 meters in length, this operation are also equipped with a chain operation for manual use during power outages, providing reliable access and security in all situations.",
+  },
+];
+
+export const projectImages = [
+  {
+    image: motorGalv1,
+    title: "4 Sets Motor Operated Roll Up Door",
+    description: "at Coca-Cola Sta.Rosa Laguna",
+  },
+  {
+    image: polycarbonate,
+    title: "3 Sets Motor Operated Polyarbonate",
+    description: "at Panipuan, CSFP",
+  },
+
+  {
+    image: manualGalv1,
+    title: "9 Sets Manually Operated Roll Up Door",
+    description: "at Sindalan, CSFP",
+  },
+  {
+    image: combination,
+    title: "Shutter w/ Peephole and Grilles Combination",
+    description: "at Dept. of Agriculture Region III Office, SACOP, CSFP",
+  },
+  {
+    image: manualGalv2,
+    title: "9 Projects Manually Operated Shutter Door",
+    description: "at O!Save supermarket from various locations",
+  },
+  {
+    image: motorGalv2,
+    title: "Motor Operated Galvalum w/ Peeophole",
+    description: "at San Agustin, CSFP",
+  },
+  {
+    image: motorGalv3,
+    title: "Motor Operated Galvalume",
+    description: "Retail Store at Quezon City",
   },
 ];
 
