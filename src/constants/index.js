@@ -33,8 +33,14 @@ import manualGalv2 from "../assets/projects/manual-galv-2.jpg";
 import motorGalv1 from "../assets/projects/motor-galv.jpg";
 import motorGalv2 from "../assets/projects/motor-galv-2.jpg";
 import motorGalv3 from "../assets/projects/motor-galv-3.jpg";
-import polycarbonate from "../assets/projects/polycarbonate.jpg";
+import motorPoly1 from "../assets/projects/motor-poly-1.jpg";
 import combination from "../assets/projects/combination.jpg";
+import motorPoly2 from "../assets/projects/motor-poly-2.jpg";
+import manualGalv3 from "../assets/projects/manual-galv-3.jpg";
+import manualGalv4 from "../assets/projects/manual-galv-4.jpg";
+import manualGalv5 from "../assets/projects/manual-galv-5.jpg";
+import motorGrilles1 from "../assets/projects/motor-grilles-1.jpg";
+import motorGrilles2 from "../assets/projects/motor-grilles-2.jpg";
 
 export const navItems = [
   { label: "About", href: "about", offset: -90 },
@@ -214,30 +220,64 @@ export const projectImages = [
     description: "at Coca-Cola Sta.Rosa Laguna",
   },
   {
-    image: polycarbonate,
-    title: "3 Sets Motor Operated Polyarbonate",
-    description: "at Panipuan, CSFP",
-  },
-
-  {
     image: manualGalv1,
     title: "9 Sets Manually Operated Roll Up Door",
     description: "at Sindalan, CSFP",
   },
   {
-    image: combination,
-    title: "Shutter w/ Peephole and Grilles Combination",
-    description: "at Dept. of Agriculture Region III Office, SACOP, CSFP",
+    image: motorPoly1,
+    title: "3 Sets Motor Operated Polycarbonate",
+    description: "at Panipuan, CSFP",
   },
+  {
+    image: motorPoly2,
+    title:
+      "4 Sets motor operated polycarbonate Roll Up Door & 1 fixed polycarbonate inside",
+    description: "at Sto. Tomas, Pampanga",
+  },
+
   {
     image: manualGalv2,
     title: "9 Projects Manually Operated Shutter Door",
     description: "at O!Save supermarket from various locations",
   },
   {
+    image: manualGalv5,
+    title: "14 Panels Galvalume Manually Operated",
+    description: "at Dolores, CSFP",
+  },
+  {
     image: motorGalv2,
     title: "Motor Operated Galvalum w/ Peeophole",
     description: "at San Agustin, CSFP",
+  },
+
+  {
+    image: manualGalv3,
+    title: "21 Sets Manually Operated Galvalume Roll Up Door",
+    description: "at La Plaza Mexico, Pampanga",
+  },
+
+  {
+    image: manualGalv4,
+    title: "Manual Operated Roll Up Door",
+    description: "at Bataan",
+  },
+  {
+    image: motorGrilles2,
+    title: "Motor Operated Aluminum Grilles",
+    description: "at Rich Town Subdivision, CSFP",
+  },
+
+  {
+    image: motorGrilles1,
+    title: "Motor Operated Aluminum Grilles",
+    description: "at San Agustin, CSFP",
+  },
+  {
+    image: combination,
+    title: "Shutter w/ Peephole and Grilles Combination",
+    description: "at Dept. of Agriculture Region III Office, SACOP, CSFP",
   },
   {
     image: motorGalv3,
