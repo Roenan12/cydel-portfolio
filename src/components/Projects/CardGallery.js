@@ -3,7 +3,7 @@ import { projectImages } from "../../constants";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "./CardGallery.css";
 
-const CardGallery = () => {
+function CardGallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedImage, setSelectedImage] = useState(null);
   const [cardsPerSlide, setCardsPerSlide] = useState(6);
@@ -31,25 +31,25 @@ const CardGallery = () => {
 
   const totalSlides = Math.ceil(projectImages.length / cardsPerSlide);
 
-  const handleNextSlide = () => {
+  function handleNextSlide() {
     if (currentSlide < totalSlides - 1) {
       setCurrentSlide(currentSlide + 1);
     }
-  };
+  }
 
-  const goToPreviousSlide = () => {
+  function goToPreviousSlide() {
     if (currentSlide > 0) {
       setCurrentSlide(currentSlide - 1);
     }
-  };
+  }
 
-  const openModal = (imageUrl) => {
+  function openModal(imageUrl) {
     setSelectedImage(imageUrl);
-  };
+  }
 
-  const closeModal = () => {
+  function closeModal() {
     setSelectedImage(null);
-  };
+  }
 
   const slideStart = currentSlide * cardsPerSlide;
   const slideEnd = slideStart + cardsPerSlide;
@@ -99,6 +99,6 @@ const CardGallery = () => {
       )}
     </>
   );
-};
+}
 
 export default CardGallery;
