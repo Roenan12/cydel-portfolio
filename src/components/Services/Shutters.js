@@ -20,7 +20,7 @@ function Shutters() {
 
           <div className="inner-grid-btn">
             {shutterTypes.slice(0, 4).map((shutter, index) => (
-              <div key={index}>
+              <div className="btn-container" key={index}>
                 <button
                   className={`shutter-btn ${
                     selectedShutter.title === shutter.title ? "selected" : ""
@@ -31,7 +31,7 @@ function Shutters() {
                 </button>
               </div>
             ))}
-            <div className="full-width">
+            <div className="full-width btn-container">
               <button
                 className={`shutter-btn ${
                   selectedShutter.title === shutterTypes[4].title

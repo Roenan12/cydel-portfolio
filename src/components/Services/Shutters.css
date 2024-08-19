@@ -55,10 +55,10 @@
 .shutter-btn.selected {
   background-color: var(--color-white);
   color: var(--color-black);
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.shutter-btn:hover {
+.shutter-btn:active {
   transform: scale(0.95);
 }
 
