@@ -1,8 +1,8 @@
 import React from "react";
 import "./Services.css";
 import TitleHeader from "../TitleHeader";
+import CheckIcon from "../CheckIcon";
 import { ApplicationShutter, Card, Shutters } from "./index";
-import { ReactComponent as CheckmarkIcon } from "../../assets/checkmark.svg";
 import { cardContent, operation } from "../../constants";
 import { Fade } from "react-awesome-reveal";
 
@@ -25,12 +25,9 @@ function Services() {
                 triggerOnce={true}
                 key={index}
               >
-                <div
-                  style={{ backgroundColor: item.background }}
-                  className="round-card"
-                >
+                <div className="round-card">
                   <div>
-                    <CheckmarkIcon className="check-icon" />
+                    <CheckIcon />
                   </div>
                   <h3 className="card-heading">{item.heading}</h3>
                   <p className="card-description">{item.content}</p>

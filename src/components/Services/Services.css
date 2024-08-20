@@ -8,6 +8,7 @@
 }
 
 .round-card {
+  background-color: var(--color-white);
   border: 1px solid #ddd;
   border-radius: 24px;
   padding: var(--20px);
