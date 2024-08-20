@@ -163,7 +163,7 @@
 
 .nav-btn-color p,
 .nav-btn-color svg,
-.nav-btn p::before {
+.nav-btn-color p::before {
   color: var(--color-white);
 }
 
@@ -217,12 +217,21 @@
   }
 
   .nav-menu.active {
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
     left: 0;
   }
 
   .nav-item {
     margin: 1.5rem 0;
+  }
+
+  .nav-item-color a {
+    color: var(--color-black);
+  }
+
+  .nav-item-color .active {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--color-black);
   }
 
   .nav-btn {
