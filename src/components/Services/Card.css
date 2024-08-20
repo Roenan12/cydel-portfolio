@@ -8,6 +8,7 @@
 
 .card {
   width: 100%;
+  height: 100%;
   margin: 10px;
   background: var(--background);
   color: var(--textColor);
@@ -17,21 +18,6 @@
   border-radius: 8px;
   display: inline-block;
   transition: 0.5s ease-in-out, box-shadow 0.5s, transform 0.5s;
-}
-/* 1920px */
-@media screen and (max-width: 120rem) {
-}
-
-/* 1440 */
-@media screen and (max-width: 90rem) {
-}
-
-/* 1200px */
-@media screen and (max-width: 75rem) {
-}
-
-/* 640px-800px (xs) */
-@media screen and (max-width: 50rem) {
 }
 
 .card:hover {
@@ -59,5 +45,6 @@
 }
 
 .card > .card-icon {
-  font-size: 3rem;
+  padding-top: 1.5rem;
+  color: var(--color-primary);
 }
