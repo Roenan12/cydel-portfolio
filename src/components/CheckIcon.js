@@ -2,7 +2,7 @@ import React from "react";
 import "./CheckIcon.css";
 import { Check } from "lucide-react";
 
-function CheckIcon({ size = 25 }) {
+function CheckIcon({ size = 30 }) {
   return (
     <div
       className="check-icon"
