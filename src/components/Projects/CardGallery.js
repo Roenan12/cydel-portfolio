@@ -15,7 +15,7 @@ function CardGallery() {
       const smallScreen = 50 * 16; // 50rem
 
       if (screenWidth <= smallScreen) {
-        setCardsPerSlide(1);
+        setCardsPerSlide(2);
       } else if (screenWidth <= mediumScreen) {
         setCardsPerSlide(4);
       } else {
@@ -62,8 +62,8 @@ function CardGallery() {
           <ChevronLeft />
         </button>
         <div className="gallery-card-container">
-          {currentCards.map((card, index) => (
-            <div key={index} className="gallery-card">
+          {currentCards.map((card) => (
+            <div key={card.id} className="gallery-card">
               <div className="card-img-container">
                 <img
                   src={card.image}
