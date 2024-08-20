@@ -1,12 +1,3 @@
-import one from "../assets/1.jpg";
-import two from "../assets/2.jpg";
-import three from "../assets/3.jpg";
-import four from "../assets/4.jpg";
-import five from "../assets/5.jpg";
-import six from "../assets/6.jpg";
-import seven from "../assets/7.jpg";
-import eight from "../assets/8.jpg";
-import nine from "../assets/9.jpg";
 import {
   MapPin,
   PhoneCall,
@@ -58,6 +49,15 @@ import combination from "../assets/projects/combination.jpg";
 import manualPoly1 from "../assets/projects/manual-poly-1.jpg";
 import motorPoly1 from "../assets/projects/motor-poly-1.jpg";
 import motorPoly2 from "../assets/projects/motor-poly-2.jpg";
+import one from "../assets/projects/infiniteSlider/1.jpg";
+import two from "../assets/projects/infiniteSlider/2.jpg";
+import three from "../assets/projects/infiniteSlider/3.jpg";
+import four from "../assets/projects/infiniteSlider/4.jpg";
+import five from "../assets/projects/infiniteSlider/5.jpg";
+import six from "../assets/projects/infiniteSlider/6.jpg";
+import seven from "../assets/projects/infiniteSlider/7.jpg";
+import eight from "../assets/projects/infiniteSlider/8.jpg";
+import nine from "../assets/projects/infiniteSlider/9.jpg";
 
 export const navItems = [
   { label: "About", href: "about", offset: -90 },
