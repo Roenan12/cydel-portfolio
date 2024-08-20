@@ -143,7 +143,10 @@ export const shutterTypes = [
     title: "Galvalume",
     details:
       "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
-    slat: ["75mm C-type", "Available in Ga.24 | Ga.22 | Ga.18 thickness"],
+    slat: [
+      "75mm C-type Galvalume",
+      "Available in Ga.24 | Ga.22 | Ga.18 thickness",
+    ],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
       "Perforated curtains or vent holes for ventiliation purposes",
@@ -157,7 +160,7 @@ export const shutterTypes = [
     title: "Aluminum",
     details:
       "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
-    slat: ["75mm C-type", "Available in Ga.24 | Ga.22 | Ga.18 thickness"],
+    slat: ["75mm C-type Anodized Aluminum", "2.0mm thickness"],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
       "Perforated curtains or vent holes for ventiliation purposes",
@@ -171,7 +174,10 @@ export const shutterTypes = [
     title: "Stainless Steel",
     details:
       "These shutter are designed to provide you with maximum security. Stainless steel adds elegance and strength compared to other shutters.",
-    slat: ["75mm C-type", "Available in Ga.24 | Ga.22 | Ga.18 thickness"],
+    slat: [
+      "75mm C-type Stainless Steel",
+      "Available in Ga.24 | Ga.22 | Ga.18 thickness",
+    ],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
       "Perforated curtains or vent holes for ventiliation purposes",
