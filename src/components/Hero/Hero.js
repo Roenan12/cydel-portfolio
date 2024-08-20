@@ -3,6 +3,7 @@ import home from "../../assets/home.png";
 import "./Hero.css";
 import { Loader } from "../Loader";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-scroll";
 
 function Hero({ isLoading, setIsLoading }) {
   useEffect(() => {
@@ -18,7 +19,7 @@ function Hero({ isLoading, setIsLoading }) {
 
   return (
     <>
-      <section id="home" className="hero">
+      <section id="home" className={isLoading ? "hero-loader" : "hero"}>
         {isLoading ? (
           ""
         ) : (
@@ -31,11 +32,17 @@ function Hero({ isLoading, setIsLoading }) {
             </p>
             <div>
               <p className="hero-description">Get a free quotation now!</p>
-              <a className="hero-btn" href="#contact">
+              <Link
+                className="hero-btn"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 <button className="learn-btn">
                   Learn More <ChevronRight />
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         )}
