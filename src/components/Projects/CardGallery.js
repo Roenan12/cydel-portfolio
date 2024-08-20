@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { projectImages } from "../../constants";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "./CardGallery.css";
+import { Fade } from "react-awesome-reveal";
 
 function CardGallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -63,18 +64,20 @@ function CardGallery() {
         </button>
         <div className="gallery-card-container">
           {currentCards.map((card) => (
-            <div key={card.id} className="gallery-card">
-              <div className="card-img-container">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="card-image"
-                  onClick={() => openModal(card.image)}
-                />
+            <Fade cascade={false} triggerOnce={true} key={card.id}>
+              <div className="gallery-card">
+                <div className="card-img-container">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="card-image"
+                    onClick={() => openModal(card.image)}
+                  />
+                </div>
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
               </div>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-            </div>
+            </Fade>
           ))}
         </div>
         <button
