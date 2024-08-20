@@ -30,17 +30,34 @@ import grilles from "../assets/shutters/grilles.png";
 import poly from "../assets/shutters/polycarbonate.png";
 import manualGalv1 from "../assets/projects/manual-galv-1.jpg";
 import manualGalv2 from "../assets/projects/manual-galv-2.jpg";
-import motorGalv1 from "../assets/projects/motor-galv.jpg";
-import motorGalv2 from "../assets/projects/motor-galv-2.jpg";
-import motorGalv3 from "../assets/projects/motor-galv-3.jpg";
-import motorPoly1 from "../assets/projects/motor-poly-1.jpg";
-import combination from "../assets/projects/combination.jpg";
-import motorPoly2 from "../assets/projects/motor-poly-2.jpg";
 import manualGalv3 from "../assets/projects/manual-galv-3.jpg";
 import manualGalv4 from "../assets/projects/manual-galv-4.jpg";
 import manualGalv5 from "../assets/projects/manual-galv-5.jpg";
+import manualGalv6 from "../assets/projects/manual-galv-6.jpg";
+import manualGalv7 from "../assets/projects/manual-galv-7.jpg";
+import manualGalv8 from "../assets/projects/manual-galv-8.jpg";
+import manualGalv9 from "../assets/projects/manual-galv-9.jpg";
+import manualGalv10 from "../assets/projects/manual-galv-10.jpg";
+import manualGalv11 from "../assets/projects/manual-galv-11.jpg";
+import manualGalv12 from "../assets/projects/manual-galv-12.jpg";
+import manualGalv13 from "../assets/projects/manual-galv-13.jpg";
+import manualGalv14 from "../assets/projects/manual-galv-14.jpg";
+import motorGalv1 from "../assets/projects/motor-galv-1.jpg";
+import motorGalv2 from "../assets/projects/motor-galv-2.jpg";
+import motorGalv3 from "../assets/projects/motor-galv-3.jpg";
+import motorGalv4a from "../assets/projects/motor-galv-4a.jpg";
+import motorGalv4b from "../assets/projects/motor-galv-4b.jpg";
+import motorGalv4c from "../assets/projects/motor-galv-4c.jpg";
+import motorGalv5 from "../assets/projects/motor-galv-5.jpg";
+import motorGalv6 from "../assets/projects/motor-galv-6.jpg";
+import motorGalv7 from "../assets/projects/motor-galv-7.jpg";
+import motorGalv8 from "../assets/projects/motor-galv-8.jpg";
 import motorGrilles1 from "../assets/projects/motor-grilles-1.jpg";
 import motorGrilles2 from "../assets/projects/motor-grilles-2.jpg";
+import combination from "../assets/projects/combination.jpg";
+import manualPoly1 from "../assets/projects/manual-poly-1.jpg";
+import motorPoly1 from "../assets/projects/motor-poly-1.jpg";
+import motorPoly2 from "../assets/projects/motor-poly-2.jpg";
 
 export const navItems = [
   { label: "About", href: "about", offset: -90 },
@@ -215,74 +232,189 @@ export const operation = [
 
 export const projectImages = [
   {
+    id: 1,
     image: motorGalv1,
-    title: "4 Sets Motor Operated Roll Up Door",
-    description: "at Coca-Cola Sta.Rosa Laguna",
+    title: "4 Sets Galvalume | Motor Operated",
+    description: "at Coca-Cola Sta. Rosa Laguna",
   },
   {
+    id: 2,
     image: manualGalv1,
-    title: "9 Sets Manually Operated Roll Up Door",
+    title: "9 Sets Galvalume | Manually Operated",
     description: "at Sindalan, CSFP",
   },
   {
+    id: 3,
     image: motorPoly1,
-    title: "3 Sets Motor Operated Polycarbonate",
+    title: "3 Sets Polycarbonate | Motor Operated",
     description: "at Panipuan, CSFP",
   },
   {
+    id: 4,
     image: motorPoly2,
-    title:
-      "4 Sets motor operated polycarbonate Roll Up Door & 1 fixed polycarbonate inside",
+    title: "4 Sets Polycarbonate & 1 Fixed Polycarbonate | Motor Operated",
     description: "at Sto. Tomas, Pampanga",
   },
 
   {
+    id: 5,
     image: manualGalv2,
-    title: "9 Projects Manually Operated Shutter Door",
+    title: "9 Projects Galvalume | Manually Operated",
     description: "at O!Save supermarket from various locations",
   },
   {
+    id: 6,
     image: manualGalv5,
-    title: "14 Panels Galvalume Manually Operated",
+    title: "14 Panels Galvalume | Manually Operated",
     description: "at Dolores, CSFP",
   },
   {
+    id: 7,
     image: motorGalv2,
-    title: "Motor Operated Galvalum w/ Peeophole",
+    title: "Galvalum w/ Peeophole | Motor Operated",
     description: "at San Agustin, CSFP",
   },
 
   {
+    id: 8,
     image: manualGalv3,
-    title: "21 Sets Manually Operated Galvalume Roll Up Door",
+    title: "21 Sets Galvalume | Manually Operated",
     description: "at La Plaza Mexico, Pampanga",
   },
 
   {
-    image: manualGalv4,
-    title: "Manual Operated Roll Up Door",
-    description: "at Bataan",
+    id: 9,
+    image: manualGalv6,
+    title: "7 Panels Galvalume | Manually Operated",
+    description: "at San Simon Pampanga",
   },
   {
+    id: 10,
     image: motorGrilles2,
-    title: "Motor Operated Aluminum Grilles",
+    title: "Aluminum Grilles | Motor Operated ",
     description: "at Rich Town Subdivision, CSFP",
   },
 
   {
+    id: 11,
     image: motorGrilles1,
-    title: "Motor Operated Aluminum Grilles",
+    title: "Aluminum Grilles | Motor Operated ",
     description: "at San Agustin, CSFP",
   },
   {
+    id: 12,
     image: combination,
-    title: "Shutter w/ Peephole and Grilles Combination",
+    title: "Galvalume and Grilles Combination w/ Peephole ",
     description: "at Dept. of Agriculture Region III Office, SACOP, CSFP",
   },
+
   {
+    id: 13,
+    image: motorGalv4a,
+    title: "4 Sets of Galvalume Shutter | Motor Operated (Left Side)",
+    description: "at City of Balanga, Bataan",
+  },
+  {
+    id: 14,
+    image: motorGalv4b,
+    title: "3 Sets Galvalume | Motor Operated (Back)",
+    description: "at City of Balanga, Bataan",
+  },
+  {
+    id: 15,
+    image: motorGalv4c,
+    title: "3 Sets Galvalume | Motor Operated (Front)",
+    description: "at City of Balanga, Bataan",
+  },
+  {
+    id: 16,
     image: motorGalv3,
-    title: "Motor Operated Galvalume",
+    title: "Galvalume Shutter | Motor Operated",
     description: "Retail Store at Quezon City",
+  },
+  {
+    id: 17,
+    image: manualGalv4,
+    title: "Galvalume Shutter | Manually Operated",
+    description: "at Bataan",
+  },
+  {
+    id: 18,
+    image: manualGalv7,
+    title: "10 Sets Galvalume | Manually Operated",
+    description: "at Bataan",
+  },
+  {
+    id: 19,
+    image: manualGalv11,
+    title: "4 Sets Galvalume | Manually Operated",
+    description: "at San Agusting, CSFP",
+  },
+  {
+    id: 20,
+    image: manualPoly1,
+    title: "1 Set of Polycarbonate & Galvalume | Manually Operated ",
+    description: "at Bacolor, Pampanga",
+  },
+  {
+    id: 21,
+    image: manualGalv10,
+    title: "2 Sets Galvalume | Manually Operated",
+    description: "at San Matias, Pampanga",
+  },
+  {
+    id: 22,
+    image: motorGalv8,
+    title: "Galvalume Shutter | Motor Operated",
+    description: "at San Rafael Mexico, Pampanga",
+  },
+  {
+    id: 23,
+    image: manualGalv9,
+    title: "Galvalume Shutter | Manually Operated",
+    description: "at Chick 'n Juicy San Nicolas, CSFP",
+  },
+  {
+    id: 24,
+    image: manualGalv8,
+    title: "2 Panels Galvalume | Manually Operated",
+    description: "at Chong's Chicken Inasal Sto. Niño, CSFP",
+  },
+  {
+    id: 25,
+    image: manualGalv12,
+    title: "30 Panels Galvalume | Manually Operated",
+    description: "at Mabalacat City, Pampanga",
+  },
+  {
+    id: 26,
+    image: manualGalv13,
+    title: "2 Panels Galvalume | Manually Operated",
+    description: "at Cebuana Lhuillier, Sindalan, CSFP",
+  },
+  {
+    id: 27,
+    image: motorGalv5,
+    title: "2 Sets Galvalume w/ peeophole | Motor Operated",
+    description: "at Mabalacat City, Pampanga",
+  },
+  {
+    id: 28,
+    image: motorGalv6,
+    title: "2 Sets Galvalume w/ peeophole | Motor Operated",
+    description: "at Mabalacat City, Pampanga",
+  },
+  {
+    id: 29,
+    image: motorGalv7,
+    title: "7 Sets Galvalume w/ peeophole | Motor Operated",
+    description: "at Mariblo, Quezon City",
+  },
+  {
+    id: 30,
+    image: manualGalv14,
+    title: "2 Sets Galvalum | Manually Operated",
+    description: "at Magliman, CSFP",
   },
 ];
 
