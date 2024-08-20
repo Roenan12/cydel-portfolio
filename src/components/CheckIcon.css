@@ -1,0 +1,9 @@
+.check-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  margin-right: 16px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
