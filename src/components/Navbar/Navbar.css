@@ -11,7 +11,7 @@
 }
 
 .header-bg {
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .header .navbar {
@@ -47,9 +47,13 @@
   font-weight: 500;
 }
 
-.nav-item .active {
+.nav-item-color {
+  color: var(--color-white);
+}
+
+.nav-item-color .active {
   padding-bottom: 12px;
-  border-bottom: 3px solid var(--color-black);
+  border-bottom: 3px solid var(--color-white);
 }
 
 .nav-menu .nav-item a:hover {
@@ -58,15 +62,31 @@
   border-bottom: 3px solid var(--color-black);
 }
 
+.nav-menu .nav-item-color a:hover {
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--color-white);
+}
+
 .nav-item.active {
   padding-bottom: 12px;
   border-bottom: 3px solid var(--color-text);
+}
+
+.nav-item-color.active {
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--color-white);
 }
 
 .nav-item a,
 .logo a {
   text-decoration: none;
   color: var(--color-black);
+}
+
+.nav-item-color a,
+.logo-color a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 .hamburger {
@@ -138,7 +158,21 @@
   transition: 0.2s;
   position: relative;
   width: 15px;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s ease-in-out;
+}
+
+.nav-btn-color p,
+.nav-btn-color svg,
+.nav-btn p::before {
+  color: var(--color-white);
+}
+
+.nav-btn-color:hover svg {
+  color: var(--color-white);
+}
+
+.nav-btn-color::after {
+  background: white;
 }
 
 @media screen and (max-width: 50rem) {
@@ -148,8 +182,9 @@
   }
 
   .header-bg {
-    background-color: var(--color-background-light);
+    background-color: var(--color-primary);
   }
+
   .header .navbar {
     max-width: 100%;
   }
@@ -160,7 +195,12 @@
   }
 
   .hamburger {
+    color: var(--color-black);
     display: block;
+  }
+
+  .hamburger-color {
+    color: var(--color-white);
   }
 
   .nav-menu {
@@ -177,6 +217,7 @@
   }
 
   .nav-menu.active {
+    background-color: var(--color-primary);
     left: 0;
   }
 

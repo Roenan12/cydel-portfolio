@@ -84,17 +84,14 @@ export const cardContent = [
   {
     heading: "Proven Expertise",
     content: "We have a decade of successful projects.",
-    background: "#FFF3E3",
   },
   {
     heading: "Quality Assurance",
     content: "Meticulous attention to detail and craftsmanship.",
-    background: "#FFE7E3",
   },
   {
     heading: "Customer Focus",
     content: "Effective, transparent, and collaborative",
-    background: "#F2F4EB",
   },
 ];
 

@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <header className={colorNav ? "header header-bg" : "header"}>
       <nav className={`navbar ${clickMenu ? "active" : ""}`}>
-        <div className="logo">
+        <div className={colorNav ? "logo logo-color" : "logo"}>
           <Link to="home" spy={true} smooth={true} duration={500}>
             <img className="cydel-logo" src={cydel} alt="company logo" />
           </Link>
@@ -40,7 +40,10 @@ function Navbar() {
 
         <ul className={clickMenu ? "nav-menu active" : "nav-menu"}>
           {navItems.map((item, index) => (
-            <li className="nav-item" key={index}>
+            <li
+              className={colorNav ? "nav-item nav-item-color" : "nav-item"}
+              key={index}
+            >
               <Link
                 to={item.href}
                 spy={true}
@@ -55,7 +58,7 @@ function Navbar() {
           ))}
         </ul>
         <Link
-          className="nav-btn"
+          className={colorNav ? "nav-btn nav-btn-color" : "nav-btn"}
           to="contact"
           spy={true}
           smooth={true}
@@ -78,7 +81,10 @@ function Navbar() {
           </svg>
         </Link>
 
-        <div className="hamburger" onClick={handleClickMenu}>
+        <div
+          className={colorNav ? "hamburger hamburger-color" : "hamburger"}
+          onClick={handleClickMenu}
+        >
           {clickMenu ? (
             <X className="icon" size={30} />
           ) : (
