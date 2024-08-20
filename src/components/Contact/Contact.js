@@ -6,6 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { Loader } from "../Loader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Fade } from "react-awesome-reveal";
 
 function Contact({ isLoading, setIsLoading }) {
   const [name, setName] = useState("");
@@ -78,63 +79,70 @@ function Contact({ isLoading, setIsLoading }) {
 
   return (
     <>
-      <section id="contact" className="contact-section">
-        <div className="contact-header">
-          <button disabled>CONTACT US</button>
-          <h1>Get in Touch</h1>
-          <p>Fill out the form below to send us a message via email.</p>
-        </div>
-        <div className="wrapper">
-          <div className="contact-container">
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <p>Name</p>
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <p>Email</p>
-              <input
-                type="email"
-                placeholder="Your Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <p>Message</p>
-              <textarea
-                row="10"
-                placeholder="Message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-              <ReCAPTCHA
-                sitekey={SITE_KEY}
-                onChange={(val) => setCapVal(val)}
-                ref={recaptchaRef}
-              />
-              <button type="submit" className="send-button">
-                {isLoading ? <Loader size={25} /> : "Send Email"}
-              </button>
-            </form>
+      <Fade cascade={false} triggerOnce={false}>
+        <section id="contact" className="contact-section">
+          <div className="contact-header">
+            <button disabled>CONTACT US</button>
+            <h1>Get in Touch</h1>
+            <p>Fill out the form below to send us a message via email.</p>
           </div>
+          <div className="wrapper">
+            <div className="contact-container">
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <p>Name</p>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                <p>Email</p>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <p>Message</p>
+                <textarea
+                  row="10"
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+                <ReCAPTCHA
+                  sitekey={SITE_KEY}
+                  onChange={(val) => setCapVal(val)}
+                  ref={recaptchaRef}
+                />
+                <button type="submit" className="send-button">
+                  {isLoading ? <Loader size={25} /> : "Send Email"}
+                </button>
+              </form>
+            </div>
 
-          <div className="other-contacts">
-            {contacts.map((items, index) => (
-              <a href={items.href} target="_blank" rel="noreferrer" key={index}>
-                <div className="contact-list">
-                  <div className="contact-icon">
-                    {items.icon}
-                    {items.ping}
+            <div className="other-contacts">
+              {contacts.map((items, index) => (
+                <a
+                  href={items.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={index}
+                >
+                  <div className="contact-list">
+                    <div className="contact-icon">
+                      {items.icon}
+                      {items.ping}
+                    </div>
+                    <p className="contact-info">{items.info}</p>
                   </div>
-                  <p className="contact-info">{items.info}</p>
-                </div>
-              </a>
-            ))}
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-        <ToastContainer />
-      </section>
+          <ToastContainer />
+        </section>
+      </Fade>
     </>
   );
 }
