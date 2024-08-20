@@ -6,24 +6,18 @@
   justify-content: center;
   align-items: start;
   overflow: hidden;
-  background: rgb(255, 231, 227);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(255, 231, 227, 1) 40%,
-    rgba(255, 243, 227, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(255, 231, 227, 1) 40%,
-    rgba(255, 243, 227, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(255, 231, 227, 1) 40%,
-    rgba(255, 243, 227, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe7e3",endColorstr="#fff3e3",GradientType=1);
-  z-index: 3;
+  background: var(--color-background-light);
+}
+
+.hero-loader {
+  position: relative;
+  display: flex;
+  height: 80vh;
+  padding: 80px 20vw;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-background-light);
 }
 
 .hero-img {
@@ -82,7 +76,8 @@
   align-items: center;
   padding: 15px 25px;
   border-radius: 30px;
-  background-color: var(--color-background-light);
+  color: var(--color-white);
+  background-color: var(--color-black);
   border: none;
   font-size: var(--16px);
   font-weight: 400;
@@ -92,7 +87,7 @@
 
 .learn-btn:hover {
   color: var(--color-text);
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
 }
 
 .learn-btn:active {

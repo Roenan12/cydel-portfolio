@@ -76,7 +76,7 @@ export const aboutStats = [
 export const aboutLegacy = [
   { content: "Always building quality shutters" },
   { content: "Best fabrication service provider" },
-  { content: "Using high-quality imported materials" },
+  { content: "Use of high-quality imported materials" },
   { content: "Experienced roll-up door specialist" },
 ];
 
