@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import home from "../../assets/home.png";
+import home from "../../assets/hero-img.webp";
 import "./Hero.css";
 import { Loader } from "../Loader";
 import { ChevronRight } from "lucide-react";
