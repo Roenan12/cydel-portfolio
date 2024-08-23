@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Shutters.css";
-import { shutterTypes } from "../../constants";
+import { shutterTypes } from "../../data";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

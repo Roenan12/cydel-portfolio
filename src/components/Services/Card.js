@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.css";
-import { services } from "../../constants";
+import { services } from "../../data";
 import { Fade } from "react-awesome-reveal";
 
 function Card() {

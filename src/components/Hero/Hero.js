@@ -28,7 +28,7 @@ function Hero({ isLoading, setIsLoading }) {
             <p className="hero-description">
               We are Cydel Iron Works, your trusted partner in roll up door
               services. With a legacy of excellence and a commitment to quality,
-              we turn your doors with security.
+              we turn your entrance doors with security.
             </p>
             <div>
               <p className="hero-description">Get a free quotation now!</p>

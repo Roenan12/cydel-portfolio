@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { navItems } from "../../constants";
+import { navItems } from "../../data";
 import cydel from "../../assets/cydel.webp";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";

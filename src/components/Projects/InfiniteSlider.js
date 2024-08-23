@@ -1,6 +1,6 @@
 import React from "react";
 import "./InfiniteSlider.css";
-import { images } from "../../constants/index";
+import { images } from "../../data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function InfiniteSlider() {

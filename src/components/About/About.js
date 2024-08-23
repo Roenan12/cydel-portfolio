@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import TitleHeader from "../TitleHeader";
-import { aboutStats, aboutLegacy } from "../../constants";
+import { aboutStats, aboutLegacy } from "../../data";
 import CheckIcon from "../CheckIcon";
 import { useSpring, animated } from "react-spring";
 import { Fade } from "react-awesome-reveal";

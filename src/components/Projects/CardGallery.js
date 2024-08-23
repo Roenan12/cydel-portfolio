@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { projectImages } from "../../constants";
+import { projectImages } from "../../data";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "./CardGallery.css";
 import { Fade } from "react-awesome-reveal";

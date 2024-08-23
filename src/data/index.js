@@ -67,9 +67,9 @@ export const navItems = [
 ];
 
 export const aboutStats = [
-  { data: 780, symbol: "+", label: "Projects Completed" },
-  { data: 95, symbol: "%", label: "Satisfaction Rate" },
-  { data: 700, symbol: "+", label: "Satisfied Clients" },
+  { data: 2180, symbol: "+", label: "Projects Completed" },
+  { data: 85, symbol: "%", label: "Satisfaction Rate" },
+  { data: 820, symbol: "+", label: "Satisfied Clients" },
   { data: 25, symbol: "+", label: "Expert Installers" },
 ];
 
@@ -83,7 +83,7 @@ export const aboutLegacy = [
 export const cardContent = [
   {
     heading: "Proven Expertise",
-    content: "We have a decade of successful projects.",
+    content: "With over a decade of successful projects.",
   },
   {
     heading: "Quality Assurance",
@@ -142,10 +142,10 @@ export const shutterTypes = [
     image: galvalume,
     title: "Galvalume",
     details:
-      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
+      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments.",
     slat: [
       "75mm C-type Galvalume",
-      "Available in Ga.24 | Ga.22 | Ga.18 thickness",
+      "Available in Ga.24 | Ga.22 | Ga.20 | Gauge 18 thickness",
     ],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
@@ -153,13 +153,13 @@ export const shutterTypes = [
       "Galvalume wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, warehouse, loading bays, and factories",
+      "Commonly used but not limited to commercial and retail stores, warehouse, loading bays, and factories.",
   },
   {
     image: aluminum,
     title: "Aluminum",
     details:
-      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
+      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments.",
     slat: ["75mm C-type Anodized Aluminum", "2.0mm thickness"],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
@@ -167,7 +167,7 @@ export const shutterTypes = [
       "Aluminum wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms",
+      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms.",
   },
   {
     image: stainless,
@@ -176,7 +176,7 @@ export const shutterTypes = [
       "These shutter are designed to provide you with maximum security. Stainless steel adds elegance and strength compared to other shutters.",
     slat: [
       "75mm C-type Stainless Steel",
-      "Available in Ga.24 | Ga.22 | Ga.18 thickness",
+      "Available in Ga.24 | Ga.22 | Ga.20 | Gauge 18 thickness",
     ],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
@@ -184,7 +184,7 @@ export const shutterTypes = [
       "Stainless steel wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms",
+      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms.",
   },
   {
     image: grilles,
@@ -202,7 +202,7 @@ export const shutterTypes = [
       "Wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to stores inside the shopping malls, store fronts, and parking garage",
+      "Commonly used but not limited to stores inside the shopping malls, store fronts, and parking garage.",
   },
   {
     image: poly,
@@ -274,7 +274,7 @@ export const projectImages = [
   {
     id: 7,
     image: motorGalv2,
-    title: "Galvalum w/ Peeophole | Motor Operated",
+    title: "Galvalum w/ peeophole | Motor Operated",
     description: "at San Agustin, CSFP",
   },
 
@@ -307,7 +307,7 @@ export const projectImages = [
   {
     id: 12,
     image: combination,
-    title: "Galvalume and Grilles Combination w/ Peephole ",
+    title: "Galvalume and Grilles Combination w/ peephole ",
     description: "at Dept. of Agriculture Region III Office, SACOP, CSFP",
   },
 
@@ -333,7 +333,7 @@ export const projectImages = [
     id: 16,
     image: motorGalv3,
     title: "Galvalume Shutter | Motor Operated",
-    description: "Retail Store at Quezon City",
+    description: "at Quezon City",
   },
   {
     id: 17,
@@ -398,19 +398,19 @@ export const projectImages = [
   {
     id: 27,
     image: motorGalv5,
-    title: "2 Sets Galvalume w/ peeophole | Motor Operated",
+    title: "2 Sets Galvalume w/ peephole | Motor Operated",
     description: "at Mabalacat City, Pampanga",
   },
   {
     id: 28,
     image: motorGalv6,
-    title: "2 Sets Galvalume w/ peeophole | Motor Operated",
+    title: "2 Sets Galvalume w/ peephole | Motor Operated",
     description: "at Mabalacat City, Pampanga",
   },
   {
     id: 29,
     image: motorGalv7,
-    title: "7 Sets Galvalume w/ peeophole | Motor Operated",
+    title: "7 Sets Galvalume w/ peephole | Motor Operated",
     description: "at Mariblo, Quezon City",
   },
   {
