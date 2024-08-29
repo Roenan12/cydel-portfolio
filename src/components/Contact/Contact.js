@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { contacts } from "../../constants";
+import { contacts } from "../../data";
 import "./Contact.css";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";

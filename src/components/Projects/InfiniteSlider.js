@@ -1,6 +1,7 @@
 import React from "react";
 import "./InfiniteSlider.css";
-import { images } from "../../constants/index";
+import { images } from "../../data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function InfiniteSlider() {
   return (
@@ -9,13 +10,13 @@ function InfiniteSlider() {
         <div className="slide-track">
           {images.map((items, index) => (
             <div className="slide" key={index}>
-              <img src={items.photo} alt="installed roll up doors"></img>
+              <LazyLoadImage src={items.photo} alt="installed roll up doors" />
             </div>
           ))}
 
           {images.map((items, index) => (
             <div className="slide" key={index}>
-              <img src={items.photo} alt="installed roll up doors"></img>
+              <LazyLoadImage src={items.photo} alt="installed roll up doors" />
             </div>
           ))}
         </div>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Shutters.css";
-import { shutterTypes } from "../../constants";
+import { shutterTypes } from "../../data";
 import { Fade } from "react-awesome-reveal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Shutters() {
   const [selectedShutter, setSelectedShutter] = useState(shutterTypes[0]); // Default to Galvalume
@@ -14,8 +15,11 @@ function Shutters() {
     <Fade triggerOnce={true}>
       <div className="shutter-container">
         <div className="shutter-column">
-          <div className="img">
-            <img src={selectedShutter.image} alt={selectedShutter.title} />
+          <div className="img-container">
+            <LazyLoadImage
+              src={selectedShutter.image}
+              alt={selectedShutter.title}
+            />
           </div>
 
           <div className="inner-grid-btn">

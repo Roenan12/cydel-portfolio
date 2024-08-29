@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { projectImages } from "../../constants";
+import { projectImages } from "../../data";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "./CardGallery.css";
 import { Fade } from "react-awesome-reveal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function CardGallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -67,7 +69,8 @@ function CardGallery() {
             <Fade cascade={false} triggerOnce={true} key={card.id}>
               <div className="gallery-card">
                 <div className="card-img-container">
-                  <img
+                  <LazyLoadImage
+                    effect="blur"
                     src={card.image}
                     alt={card.title}
                     className="card-image"

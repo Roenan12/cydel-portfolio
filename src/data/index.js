@@ -14,50 +14,50 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Pulse from "../components/Contact/Pulse";
-import galvalume from "../assets/shutters/galvalum.png";
-import aluminum from "../assets/shutters/aluminum.png";
-import stainless from "../assets/shutters/stainless.png";
-import grilles from "../assets/shutters/grilles.png";
-import poly from "../assets/shutters/polycarbonate.png";
-import manualGalv1 from "../assets/projects/manual-galv-1.jpg";
-import manualGalv2 from "../assets/projects/manual-galv-2.jpg";
-import manualGalv3 from "../assets/projects/manual-galv-3.jpg";
-import manualGalv4 from "../assets/projects/manual-galv-4.jpg";
-import manualGalv5 from "../assets/projects/manual-galv-5.jpg";
-import manualGalv6 from "../assets/projects/manual-galv-6.jpg";
-import manualGalv7 from "../assets/projects/manual-galv-7.jpg";
-import manualGalv8 from "../assets/projects/manual-galv-8.jpg";
-import manualGalv9 from "../assets/projects/manual-galv-9.jpg";
-import manualGalv10 from "../assets/projects/manual-galv-10.jpg";
-import manualGalv11 from "../assets/projects/manual-galv-11.jpg";
-import manualGalv12 from "../assets/projects/manual-galv-12.jpg";
-import manualGalv13 from "../assets/projects/manual-galv-13.jpg";
-import manualGalv14 from "../assets/projects/manual-galv-14.jpg";
-import motorGalv1 from "../assets/projects/motor-galv-1.jpg";
-import motorGalv2 from "../assets/projects/motor-galv-2.jpg";
-import motorGalv3 from "../assets/projects/motor-galv-3.jpg";
-import motorGalv4a from "../assets/projects/motor-galv-4a.jpg";
-import motorGalv4b from "../assets/projects/motor-galv-4b.jpg";
-import motorGalv4c from "../assets/projects/motor-galv-4c.jpg";
-import motorGalv5 from "../assets/projects/motor-galv-5.jpg";
-import motorGalv6 from "../assets/projects/motor-galv-6.jpg";
-import motorGalv7 from "../assets/projects/motor-galv-7.jpg";
-import motorGalv8 from "../assets/projects/motor-galv-8.jpg";
-import motorGrilles1 from "../assets/projects/motor-grilles-1.jpg";
-import motorGrilles2 from "../assets/projects/motor-grilles-2.jpg";
-import combination from "../assets/projects/combination.jpg";
-import manualPoly1 from "../assets/projects/manual-poly-1.jpg";
-import motorPoly1 from "../assets/projects/motor-poly-1.jpg";
-import motorPoly2 from "../assets/projects/motor-poly-2.jpg";
-import one from "../assets/projects/infiniteSlider/1.jpg";
-import two from "../assets/projects/infiniteSlider/2.jpg";
-import three from "../assets/projects/infiniteSlider/3.jpg";
-import four from "../assets/projects/infiniteSlider/4.jpg";
-import five from "../assets/projects/infiniteSlider/5.jpg";
-import six from "../assets/projects/infiniteSlider/6.jpg";
-import seven from "../assets/projects/infiniteSlider/7.jpg";
-import eight from "../assets/projects/infiniteSlider/8.jpg";
-import nine from "../assets/projects/infiniteSlider/9.jpg";
+import galvalume from "../assets/shutters/galvalum.webp";
+import aluminum from "../assets/shutters/aluminum.webp";
+import stainless from "../assets/shutters/stainless.webp";
+import grilles from "../assets/shutters/grilles.webp";
+import poly from "../assets/shutters/polycarbonate.webp";
+import manualGalv1 from "../assets/projects/manual-galv-1.webp";
+import manualGalv2 from "../assets/projects/manual-galv-2.webp";
+import manualGalv3 from "../assets/projects/manual-galv-3.webp";
+import manualGalv4 from "../assets/projects/manual-galv-4.webp";
+import manualGalv5 from "../assets/projects/manual-galv-5.webp";
+import manualGalv6 from "../assets/projects/manual-galv-6.webp";
+import manualGalv7 from "../assets/projects/manual-galv-7.webp";
+import manualGalv8 from "../assets/projects/manual-galv-8.webp";
+import manualGalv9 from "../assets/projects/manual-galv-9.webp";
+import manualGalv10 from "../assets/projects/manual-galv-10.webp";
+import manualGalv11 from "../assets/projects/manual-galv-11.webp";
+import manualGalv12 from "../assets/projects/manual-galv-12.webp";
+import manualGalv13 from "../assets/projects/manual-galv-13.webp";
+import manualGalv14 from "../assets/projects/manual-galv-14.webp";
+import motorGalv1 from "../assets/projects/motor-galv-1.webp";
+import motorGalv2 from "../assets/projects/motor-galv-2.webp";
+import motorGalv3 from "../assets/projects/motor-galv-3.webp";
+import motorGalv4a from "../assets/projects/motor-galv-4a.webp";
+import motorGalv4b from "../assets/projects/motor-galv-4b.webp";
+import motorGalv4c from "../assets/projects/motor-galv-4c.webp";
+import motorGalv5 from "../assets/projects/motor-galv-5.webp";
+import motorGalv6 from "../assets/projects/motor-galv-6.webp";
+import motorGalv7 from "../assets/projects/motor-galv-7.webp";
+import motorGalv8 from "../assets/projects/motor-galv-8.webp";
+import motorGrilles1 from "../assets/projects/motor-grilles-1.webp";
+import motorGrilles2 from "../assets/projects/motor-grilles-2.webp";
+import combination from "../assets/projects/combination.webp";
+import manualPoly1 from "../assets/projects/manual-poly-1.webp";
+import motorPoly1 from "../assets/projects/motor-poly-1.webp";
+import motorPoly2 from "../assets/projects/motor-poly-2.webp";
+import one from "../assets/projects/infiniteSlider/1.webp";
+import two from "../assets/projects/infiniteSlider/2.webp";
+import three from "../assets/projects/infiniteSlider/3.webp";
+import four from "../assets/projects/infiniteSlider/4.webp";
+import five from "../assets/projects/infiniteSlider/5.webp";
+import six from "../assets/projects/infiniteSlider/6.webp";
+import seven from "../assets/projects/infiniteSlider/7.webp";
+import eight from "../assets/projects/infiniteSlider/8.webp";
+import nine from "../assets/projects/infiniteSlider/9.webp";
 
 export const navItems = [
   { label: "About", href: "about", offset: -90 },
@@ -67,9 +67,9 @@ export const navItems = [
 ];
 
 export const aboutStats = [
-  { data: 780, symbol: "+", label: "Projects Completed" },
-  { data: 95, symbol: "%", label: "Satisfaction Rate" },
-  { data: 700, symbol: "+", label: "Satisfied Clients" },
+  { data: 2180, symbol: "+", label: "Projects Completed" },
+  { data: 85, symbol: "%", label: "Satisfaction Rate" },
+  { data: 820, symbol: "+", label: "Satisfied Clients" },
   { data: 25, symbol: "+", label: "Expert Installers" },
 ];
 
@@ -83,7 +83,7 @@ export const aboutLegacy = [
 export const cardContent = [
   {
     heading: "Proven Expertise",
-    content: "We have a decade of successful projects.",
+    content: "With over a decade of successful projects.",
   },
   {
     heading: "Quality Assurance",
@@ -142,10 +142,10 @@ export const shutterTypes = [
     image: galvalume,
     title: "Galvalume",
     details:
-      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
+      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments.",
     slat: [
       "75mm C-type Galvalume",
-      "Available in Ga.24 | Ga.22 | Ga.18 thickness",
+      "Available in Ga.24 | Ga.22 | Ga.20 | Gauge 18 thickness",
     ],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
@@ -153,13 +153,13 @@ export const shutterTypes = [
       "Galvalume wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, warehouse, loading bays, and factories",
+      "Commonly used but not limited to commercial and retail stores, warehouse, loading bays, and factories.",
   },
   {
     image: aluminum,
     title: "Aluminum",
     details:
-      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments",
+      "The most economical and cost effective shutters, these heavy duty shutters are designed to provide maximum security to your establishments.",
     slat: ["75mm C-type Anodized Aluminum", "2.0mm thickness"],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
@@ -167,7 +167,7 @@ export const shutterTypes = [
       "Aluminum wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms",
+      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms.",
   },
   {
     image: stainless,
@@ -176,7 +176,7 @@ export const shutterTypes = [
       "These shutter are designed to provide you with maximum security. Stainless steel adds elegance and strength compared to other shutters.",
     slat: [
       "75mm C-type Stainless Steel",
-      "Available in Ga.24 | Ga.22 | Ga.18 thickness",
+      "Available in Ga.24 | Ga.22 | Ga.20 | Gauge 18 thickness",
     ],
     size: "Maximum of 7 meters width(single panel) & Minimum of 1 meter width(single panel)",
     optionalAccesories: [
@@ -184,7 +184,7 @@ export const shutterTypes = [
       "Stainless steel wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms",
+      "Commonly used but not limited to commercial and retail stores, clean rooms, and storage rooms.",
   },
   {
     image: grilles,
@@ -202,7 +202,7 @@ export const shutterTypes = [
       "Wicket door for service entry",
     ],
     application:
-      "Commonly used but not limited to stores inside the shopping malls, store fronts, and parking garage",
+      "Commonly used but not limited to stores inside the shopping malls, store fronts, and parking garage.",
   },
   {
     image: poly,
@@ -274,7 +274,7 @@ export const projectImages = [
   {
     id: 7,
     image: motorGalv2,
-    title: "Galvalum w/ Peeophole | Motor Operated",
+    title: "Galvalum w/ peeophole | Motor Operated",
     description: "at San Agustin, CSFP",
   },
 
@@ -307,7 +307,7 @@ export const projectImages = [
   {
     id: 12,
     image: combination,
-    title: "Galvalume and Grilles Combination w/ Peephole ",
+    title: "Galvalume and Grilles Combination w/ peephole ",
     description: "at Dept. of Agriculture Region III Office, SACOP, CSFP",
   },
 
@@ -333,7 +333,7 @@ export const projectImages = [
     id: 16,
     image: motorGalv3,
     title: "Galvalume Shutter | Motor Operated",
-    description: "Retail Store at Quezon City",
+    description: "at Quezon City",
   },
   {
     id: 17,
@@ -398,19 +398,19 @@ export const projectImages = [
   {
     id: 27,
     image: motorGalv5,
-    title: "2 Sets Galvalume w/ peeophole | Motor Operated",
+    title: "2 Sets Galvalume w/ peephole | Motor Operated",
     description: "at Mabalacat City, Pampanga",
   },
   {
     id: 28,
     image: motorGalv6,
-    title: "2 Sets Galvalume w/ peeophole | Motor Operated",
+    title: "2 Sets Galvalume w/ peephole | Motor Operated",
     description: "at Mabalacat City, Pampanga",
   },
   {
     id: 29,
     image: motorGalv7,
-    title: "7 Sets Galvalume w/ peeophole | Motor Operated",
+    title: "7 Sets Galvalume w/ peephole | Motor Operated",
     description: "at Mariblo, Quezon City",
   },
   {

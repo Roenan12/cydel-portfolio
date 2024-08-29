@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Cydel Iron Works - Roll-Up Door Services Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Cydel Iron Works** landing page repository! This project is a responsive, single-page website designed to showcase the services of Cydel Iron Works, specializing in roll-up door services. The site is built using **Create React App**, **Vanilla CSS**, and **JavaScript**.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Getting API Keys](#getting-api-keys)
+- [Libraries and Tools](#libraries-and-tools)
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can view the live demo of the landing page [here](https://cydelironworks.netlify.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Responsive Design**: Fully responsive design that adapts to all screen sizes, from mobile to desktop.
+- **Modern UI/UX**: Clean and intuitive user interface with a focus on user experience.
+- **Services Overview**: Information about roll-up door services, including applications of shutters, shutter options, manual and motorized operation.
+- **Project Portfolio**: Interactive photo gallery slider showcasing completed projects, allowing users to view a collection of images in a sliding format.
+- **Contact Form**: Easy-to-use contact form, the functionality is built with **EmailJS** and **Axios**. The form is protected with **reCAPTCHA** verification to prevent spam.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To get a local copy up and running, follow these simple steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/yourusername/cydel-portfolio.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Change to project directory**:
+   ```bash
+    cd cydel-portfolio
+   ```
+3. **Install dependencies**:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the development server**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Open your browser** and navigate to http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting API Keys
 
-## Learn More
+To use the contact form functionality, you'll need to set up your own API keys for **EmailJS** and **reCAPTCHA**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **EmailJS**: Follow the [EmailJS Quick Start Guide](https://www.emailjs.com/docs/examples/reactjs/) to set up your EmailJS account and get your API key.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Sign up for an account at [EmailJS](https://www.emailjs.com/).
+   - Create a new email service and email template in the EmailJS dashboard.
+   - Generate an API key for your account, which will be used to send emails from the contact form.
+   - After registration, you will receive a **Public Key**, **Service ID**, and a **Template ID**.
 
-### Code Splitting
+2. **reCAPTCHA**: Visit the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/create) to register your site and get your reCAPTCHA site and secret keys.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - Sign in with your Google account and navigate to the [Admin Console](https://www.google.com/recaptcha/admin/create).
+   - Register your site by providing a label, selecting the reCAPTCHA type, and entering your domain.
+   - After registration, you will receive a **Site Key** and a **Secret Key**. These keys are required for integrating reCAPTCHA with your contact form.
+   - Follow the [Google reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/v3) for detailed integration instructions.
 
-### Analyzing the Bundle Size
+3. **Replace the Key and ID in .env**
+   ```bash
+   REACT_APP_PUBLIC_KEY="your-own-public-key"
+   REACT_APP_SERVICE_ID="your-own-service-id"
+   REACT_APP_TEMPLATE_ID="your-own-template-id"
+   REACT_APP_SITE_KEY="your-own-site-key"
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Libraries and Tools
 
-### Making a Progressive Web App
+This project utilizes several libraries and tools to enhance the functionality and user experience:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React Awesome Reveal**: Used for smooth animations to reveal the compoenents on scroll. [Documentation](https://www.npmjs.com/package/react-awesome-reveal)
+- **React Scroll**: Provides smooth scrolling functionality for navigating through the page sections. [Documentation](https://www.npmjs.com/package/react-scroll)
 
-### Advanced Configuration
+- **React Spring**: Used to animate the accumulating numbers on the About section. [Documentation](https://react-spring.dev/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **React Toastify**: Used for displaying notification pop-ups, such as form submission success or error messages. [Documentation](https://www.npmjs.com/package/react-toastify)
 
-### Deployment
+- **React Lazy Load Image Component**: Used for lazy loading images to improve performance and reduce the initial load time of the page. [Documentation](https://www.npmjs.com/package/react-lazy-load-image-component)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Axios**: Used for making HTTP requests, such as sending form data to EmailJS. [Documentation](https://axios-http.com/docs/intro)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Lucide React**: A collection of free, customizable, and high-quality icons for use in the project. [Documentation](https://lucide.dev/docs/lucide-react)

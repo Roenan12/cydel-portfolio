@@ -1,6 +1,6 @@
 import React from "react";
 import "./ApplicationShutter.css";
-import { applicationTypes } from "../../constants";
+import { applicationTypes } from "../../data";
 import { Fade } from "react-awesome-reveal";
 
 function ApplicationShutter() {

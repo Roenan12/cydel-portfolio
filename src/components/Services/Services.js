@@ -3,7 +3,7 @@ import "./Services.css";
 import TitleHeader from "../TitleHeader";
 import CheckIcon from "../CheckIcon";
 import { ApplicationShutter, Card, Shutters } from "./index";
-import { cardContent, operation } from "../../constants";
+import { cardContent, operation } from "../../data";
 import { Fade } from "react-awesome-reveal";
 
 function Services() {
