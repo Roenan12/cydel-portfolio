@@ -79,7 +79,7 @@ function Contact({ isLoading, setIsLoading }) {
 
   return (
     <>
-      <Fade cascade={false} triggerOnce={false}>
+      <Fade cascade={false} triggerOnce={true}>
         <section id="contact" className="contact-section">
           <div className="contact-header">
             <button disabled>CONTACT US</button>
