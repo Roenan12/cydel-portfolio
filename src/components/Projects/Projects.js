@@ -11,7 +11,7 @@ function Projects() {
           title="Our Remarkable Project Portfolio"
           description=" Explore our extensive portfolio showcasing the breadth of our expertise,
         from iconic shutter doors to sustainable solutions, all meticulously
-        crafted to perfection"
+        crafted to perfection."
         />
 
         <section>
