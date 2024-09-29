@@ -92,3 +92,19 @@ This project utilizes several libraries and tools to enhance the functionality a
 - **Axios**: Used for making HTTP requests, such as sending form data to EmailJS. [Documentation](https://axios-http.com/docs/intro)
 
 - **Lucide React**: A collection of free, customizable, and high-quality icons for use in the project. [Documentation](https://lucide.dev/docs/lucide-react)
+
+## Future Improvements
+
+- **Implement React Hook Form**: Integrate [React Hook Form](https://react-hook-form.com/) to manage form state more efficiently, enhancing performance and reducing re-renders.
+  
+- **Improve Accessibility**: Conduct an accessibility audit and implement best practices to ensure the site is usable for all users, including keyboard navigation and screen reader support.
+
+- **SEO Optimization**: Optimize the landing page for search engines by improving meta tags, headings, and structured data to enhance visibility.
+
+- **Performance Enhancements**: Analyze and optimize performance metrics using tools like Google Lighthouse, focusing on load times and bundle sizes.
+
+- **Additional Features**: Consider adding a blog section to share updates and insights about roll-up door services or related industry news.
+
+- **Dark Mode**: Implement a dark mode toggle to enhance user experience, especially for users who prefer low-light environments.
+
+- **Unit and Integration Testing**: Add tests using libraries like Jest and React Testing Library to ensure the application is robust and free of bugs.
