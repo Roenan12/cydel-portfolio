@@ -68,12 +68,9 @@ To use the contact form functionality, you'll need to set up your own API keys f
    - After registration, you will receive a **Site Key** and a **Secret Key**. These keys are required for integrating reCAPTCHA with your contact form.
    - Follow the [Google reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/v3) for detailed integration instructions.
 
-3. **Replace the Key and ID in .env**
+3. **Configure environment variables**
    ```bash
-   REACT_APP_PUBLIC_KEY="your-own-public-key"
-   REACT_APP_SERVICE_ID="your-own-service-id"
-   REACT_APP_TEMPLATE_ID="your-own-template-id"
-   REACT_APP_SITE_KEY="your-own-site-key"
+    cp .env.example .env
    ```
 
 ## Libraries and Tools
