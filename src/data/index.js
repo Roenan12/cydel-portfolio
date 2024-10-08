@@ -14,7 +14,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Pulse from "../components/Contact/Pulse";
-import galvalume from "../assets/shutters/galvalum.webp";
+import galvalume from "../assets/shutters/galvalume.webp";
 import aluminum from "../assets/shutters/aluminum.webp";
 import stainless from "../assets/shutters/stainless.webp";
 import grilles from "../assets/shutters/grilles.webp";
