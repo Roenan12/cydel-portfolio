@@ -67,9 +67,9 @@ export const navItems = [
 ];
 
 export const aboutStats = [
-  { data: 2180, symbol: "+", label: "Projects Completed" },
-  { data: 85, symbol: "%", label: "Satisfaction Rate" },
-  { data: 820, symbol: "+", label: "Satisfied Clients" },
+  { data: 2500, symbol: "+", label: "Projects Completed" },
+  { data: 97, symbol: "%", label: "Satisfaction Rate" },
+  { data: 1000, symbol: "+", label: "Satisfied Clients" },
   { data: 25, symbol: "+", label: "Expert Installers" },
 ];
 
@@ -431,7 +431,7 @@ export const contacts = [
   {
     ping: "",
     icon: <PhoneCall />,
-    info: ["(+63) 922 830 4418 | ", "(+63) 933 818 4362"],
+    info: ["(+63) 922 830 4418 | ", "(+63) 915 235 9460"],
     href: "tel:+639228304418",
   },
   {
