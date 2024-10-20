@@ -140,9 +140,9 @@ function Contact({ isLoading, setIsLoading }) {
               ))}
             </div>
           </div>
-          <ToastContainer />
         </section>
       </Fade>
+      <ToastContainer />
     </>
   );
 }
